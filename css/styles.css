@@ -313,6 +313,12 @@ caption {
   text-align: left;
 }
 
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+
 th {
   text-align: inherit;
   text-align: -webkit-match-parent;
@@ -567,6 +573,7 @@ progress {
 .form-group textarea {
   width: 100%;
   padding: 5px;
+  background-color: rgb(255, 238, 236);
   font-size: 18px;
   border: 1px solid rgba(128, 128, 128, 0.199);
   margin-top: 5px;

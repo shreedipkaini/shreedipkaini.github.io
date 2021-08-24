@@ -30,7 +30,7 @@
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
-                        
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" onclick="dark()"><i class="fas fa-adjust"></i></a></li>
                     </ul>
                      
                 </div>
@@ -436,6 +436,14 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         <script src="js/main.js"></script>
+        
+        
+         <script>
+function dark() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
         
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
