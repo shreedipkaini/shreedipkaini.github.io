@@ -33,6 +33,7 @@
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#social"><<i class="fas fa-globe"></i>></a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" onclick="dark()"><i class="fas fa-adjust"></i></a></li>
                     </ul>
 
@@ -59,13 +60,9 @@
                 <br>
                 
                 </p>
-                <a href="#contact" class="buttons">Contact</a>
-                <div class="home__social">
-			
-			<a href ="https://github.com/shreedipkaini/" target="_blank" class="home__social-icon"><i class='bx bxl-github'></i></a>
-			<a href ="https://www.instagram.com/sanstum_infinity_/" target="_blank" class="home__social-icon"><i class='bx bxl-instagram'></i></a>	
-			<a href ="https://www.youtube.com/channel/UC7za0aGHO096_fCoWR1fUOg?sub_confirmation=1" target="_blank" class="home__social-icon"><i class='bx bxl-youtube'></i></a>
-		</div>
+                			 <a href="#contact" class="buttons">Contact</a>
+                
+                
 		
             </div>
         </header>
@@ -180,7 +177,11 @@
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+    <div class="home__social">
+
+			<a href ="mailto: kainisridip5@gmail.com" target="_blank" class="home__social-icon"><i class='bx bx-mail-send'></i></a>
+			
+		</div>
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Contact Section Form-->
@@ -210,12 +211,15 @@
                             
                             <!-- Submit Button-->
                             <button id="submitButton" type="submited">Send</button>
-                        </form><br>
+                        
+                        </form>
+                        <br>
                         <div id="status"></div>
-                    </div>
+                            
                       
                 </div>
             </div>
+            
         </section>
         <!-- Footer-->
         <footer class="footer text-center">
@@ -228,15 +232,22 @@
                             Kathmandu,<br> Province no. 3
                             <br />
                             Nepal [44600]
+                            <div class="divider-custom divider-light">
+                    		<div class="divider-custom-line"></div>
+                    	     </div>
                         </p>
                     </div>
                     <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Around the Web</h4>
+                    <div class="col-lg-4 mb-5 mb-lg-0" id="social">
+
+                        <h4 class="text-uppercase mb-4">Around the Web<br><<i class="fas fa-globe"></i>></h4>
                         <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/shreedip.kaini/" target="_blank"><i class="fab fa-fw fa-facebook-f"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/sanstum_infinity_/" target="_blank"><i class="fab fa-fw fa-instagram"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/shreedipkaini/" target="_blank"><i class="fab fa-fw fa-github"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.youtube.com/channel/UC7za0aGHO096_fCoWR1fUOg?sub_confirmation=1" target="_blank"><i class="fab fa-fw fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.youtube.com/channel/UC7za0aGHO096_fCoWR1fUOg?sub_confirmation=1" target="_blank"><i class="fab fa-fw fa-youtube"></i></a><br><br>
+                    <div class="divider-custom divider-light">
+                    		<div class="divider-custom-line"></div>
+                    	     </div>
                     </div>
                     <!-- Footer About Text-->
                     <div class="col-lg-4">
@@ -245,6 +256,9 @@
                             This lanidng website is hosted by Shreedip Kaini using html, css and javascript from Bootstrap.
                        
                         </p>
+                        <div class="divider-custom divider-light">
+                    		<div class="divider-custom-line"></div>
+                    	     </div>
                     </div>
                 </div>
             </div>
@@ -285,70 +299,7 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Bad Food</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Circus Tent</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <!-- Portfolio Modal 4-->
         <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
             <div class="modal-dialog modal-xl">
@@ -369,7 +320,7 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <p class="mb-4">Snake & Ladder Game is a Python backend without graphics [pyGame]. It is my first game development in Python. User can play multiplayer Snake and ladder Game</p>
                                     <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
                                         Close Window
