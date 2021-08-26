@@ -44,7 +44,7 @@
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="assets/img/avataars.png" alt="..." />
+                <img class="masthead-avatar mb-5" src="assets/img/avataars.png" alt="..." onclick="this.src='assets/img/avataars2.png';audio.play();"/>
                 <!-- Masthead Heading-->
                 <h1 class="masthead-heading text-uppercase mb-0">Shreedip Kaini</h1>
                 <!-- Icon Divider-->
@@ -351,6 +351,15 @@ function dark() {
 }
 </script>
 
+<script>
+var audio = new Audio("audio/glass.mp3");
+
+audio.oncanplaythrough = function(){
+audio.play();
+}
+
+
+</script>
 
 
         
