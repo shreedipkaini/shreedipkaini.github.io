@@ -44,7 +44,7 @@
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="assets/img/avataars.png" alt="..." onclick="this.src='assets/img/avataars2.png';audio.play();"/>
+                <img class="masthead-avatar mb-5" src="assets/img/avataars.png" alt="..." onclick="this.src='assets/img/avataars2.png';glass.play();"/>
                 <!-- Masthead Heading-->
                 <h1 class="masthead-heading text-uppercase mb-0">Shreedip Kaini</h1>
                 <!-- Icon Divider-->
@@ -55,7 +55,7 @@
                 </div>
                 <!-- Masthead Subheading-->
                 <p class="masthead-subheading font-weight-light mb-0">I think I'm cool but I know I'm not because I am a complete mess!<br>
-                🤡️
+                </p><p onclick="joker.play();">🤡️
                 <br>
                 <br>
                 
@@ -352,10 +352,16 @@ function dark() {
 </script>
 
 <script>
-var audio = new Audio("audio/glass.mp3");
+var glass = new Audio("audio/glass.mp3");
 
-audio.oncanplaythrough = function(){
-audio.play();
+glass.oncanplaythrough = function(){
+glass.play();
+}
+
+var joker = new Audio("audio/joker.mp3");
+
+joker.oncanplaythrough = function(){
+joker.play();
 }
 
 
