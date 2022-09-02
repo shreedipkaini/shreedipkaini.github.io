@@ -22,8 +22,125 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+	    <style type="text/css">
+#overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: #000;
+filter:alpha(opacity=70);
+-moz-opacity:0.7;
+-khtml-opacity: 0.7;
+opacity: 0.7;
+z-index: 100;
+display: none;
+}
+.cnt223 a{
+text-decoration: none;
+}
+.popup{
+width: 100%;
+margin: 0 auto;
+display: none;
+position: absolute;
+z-index: 101;
+}
+.cnt223{
+min-width: 600px;
+width: 600px;
+min-height: 150px;
+margin: 100px auto;
+background: #cbce9d;
+position: relative;
+z-index: 103;
+padding: 15px 35px;
+border-radius: 5px;
+box-shadow: 0 2px 5px #000;
+}
+.cnt223 p{
+clear: both;
+    color: #555555;
+    /* text-align: justify; */
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.cnt223 p a{
+color: #d91900;
+font-weight: bold;
+}
+.cnt223 .x{
+float: right;
+height: 35px;
+left: 22px;
+position: relative;
+top: -25px;
+width: 34px;
+}
+.cnt223 .x:hover{
+cursor: pointer;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f30606;
+}
+
+.button1:hover {
+  background-color: #ff1010;
+  color: white;
+}
+		    
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #2af306;
+}
+
+.button2:hover {
+  background-color: #2af306;
+  color: white;
+}
+
+</style>
     </head>
     <body id="page-top">
+	    
+	    
+	    <!--notice popup-->
+<div class='popup'>
+    <div class='cnt223'>
+    <h1>Important Notice</h1>
+    <p>
+    <img src="poster.png" style="max-width: 100%; height: auto;">
+    <br/>
+    <br/>
+	    <a href='shreedipkaini.com.np/familyweek' class='close'>
+    <button class="button button2">VISIT</button>
+    </a>
+	    
+    <a href='' class='close'>
+    <button class="button button1">CLOSE</button>
+    </a>
+    </p>
+    </div>
+    </div>
+	    
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
