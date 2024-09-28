@@ -68,6 +68,19 @@
                     <button type="button" class="dropdown-option" id="selectProblemBtn">Select Problem</button>
                 </div>
             </div>
+
+            <div class="form-group">
+                <label for="serviceType">Service Type:</label>
+                <div class="input-with-button">
+                    <select id="serviceType" name="serviceType" required>
+                        <option value="" disabled selected>Select Service Type</option>
+                        <option value="Normal Repair">Normal Repair (Expert arrival within 2 days)</option>
+                        <option value="Express Repair">Express Repair (Expert arrival within 24 hours)</option>
+                        <option value="Emergency Repair">Emergency Repair (Expert arrival within 1-2 hours)</option>
+                    </select>
+                    <i class="fas fa-chevron-down dropdown-icon"></i> <!-- Add a dropdown icon -->
+                </div>
+            </div>
             
             <div class="form-group">
                 <label for="comment">Describe your problem:</label>

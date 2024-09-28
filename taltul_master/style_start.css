@@ -79,6 +79,29 @@
     box-sizing: border-box; /* Ensures padding doesn't break the layout */
 }
 
+.input-with-button select {
+    width: 100%;
+    padding: 10px 40px 10px 15px; /* Padding to make space for the icon */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    appearance: none; /* Hide default dropdown arrow */
+    outline: none;
+    box-sizing: border-box;
+    background-color: #fff;
+    background-image: none; /* Remove default background image */
+}
+
+/* Style for the Dropdown Icon */
+.dropdown-icon {
+    position: absolute;
+    right: 15px; /* Place the icon at the right side of the select box */
+    top: 50%;
+    transform: translateY(-50%); /* Vertically center the icon */
+    color: #666; /* Icon color */
+    pointer-events: none; /* Make sure the icon doesn’t block the dropdown */
+}
+
 /* Positioning the button inside the input */
 .dropdown-option {
     position: absolute;
