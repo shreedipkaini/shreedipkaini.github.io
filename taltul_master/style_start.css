@@ -1,0 +1,169 @@
+/* Get Started Section */
+.get-started-section {
+    padding: 50px 0;
+}
+
+.container1 {
+    width: 50%; /* Use 70% of the page */
+    margin: 0 auto; /* Center the content */
+}
+
+.get-started-section h1 {
+    font-size: 2.5rem;
+    color: #991394;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.get-started-section p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.btn {
+    background-color: #fb8f67;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff6a3c;
+}
+
+/* Sexy Dropdown Option Style */
+/* Container for input and button */
+.input-with-button {
+    position: relative; /* Allows the button to be positioned inside the container */
+    display: flex;
+    align-items: center;
+}
+
+/* Input field style */
+.input-with-button input {
+    width: 100%;
+    padding-right: 120px; /* Space for the button inside the input */
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box; /* Ensures padding doesn't break the layout */
+}
+
+/* Positioning the button inside the input */
+.dropdown-option {
+    position: absolute;
+    right: 1px; /* Align the button to the right of the input */
+    top: 50%;
+    transform: translateY(-50%); /* Center the button vertically */
+    background-color: #4C2C92;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-option:hover {
+    background-color: #FF7F50;
+    transform: translateY(-50%) translateX(-3px); /* Slight hover movement */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-option:active {
+    transform: translateY(-50%) translateX(0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Popup Styles */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1001; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+}
+
+.popup-content {
+    background-color: #fff;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width:fit-content; /* Could be more or less, depending on screen size */
+    border-radius: 10px;
+    text-align: center;
+}
+
+.popup-content img.success-image {
+    width: auto; /* Adjust size as needed */
+    height: auto;
+}
+
+.close-btn1 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn1:hover,
+.close-btn1:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Service List Dropdown */
+.services-list {
+    margin-top: 10px;
+    max-height: 200px; /* Limit height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.services-list div {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.services-list div:hover {
+    background-color: #FF7F50; /* Highlight on hover */
+    color: white;
+}

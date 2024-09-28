@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_start.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+</head>
+<body>
+
+ <!-- Header -->
+ <header class="site-header">
+    <div class="container2">
+        <div class="top-bar">
+            <a href="index.html" class="logo">
+                <img src="pic/logo.png" alt="Taltul Master Logo" class="logo-image">
+            </a>
+            <div class="auth-links">
+                <a href="/login" class="button small">Login / Register</a>
+                <!-- <a href="/register" class="button small">Register</a> -->
+            </div>
+        </div>
+
+        <nav class="main-nav">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+
+
+
+<section class="get-started-section">
+    <div class="container1">
+        <br>
+        <h1>Get Started</h1>
+        <p>Please fill in the details below to get started with our services and book an expert.</p>
+
+        <!-- Get Started Form -->
+        <form id="getStartedForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your Full Name" required>
+            </div>
+            <div class="form-group">
+                <label for="number">Phone Number:</label>
+                <input type="tel" id="number" name="number" maxlength="10" placeholder="Enter 10 digit valid phone number" pattern="[0-9]{10}" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" placeholder="Enter the address for expert to arrive" required>
+            </div>
+            <div class="form-group">
+                <label for="problem">Problem:</label>
+                <div class="input-with-button">
+                    <input type="text" id="problem" name="problem" placeholder="Select Problem" readonly required>
+                    <button type="button" class="dropdown-option" id="selectProblemBtn">Select Problem</button>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="comment">Describe your problem:</label>
+                <textarea id="comment" name="comment" rows="4" placeholder="Describe the nature of the issue you want to fix" required></textarea>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+
+        <!-- Popup for selecting service -->
+        <div id="servicePopup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn1" id="closePopup">&times;</span>
+                <h2>Select a Service</h2>
+                <label for="serviceCategory">Select Category:</label>
+                <select id="serviceCategory">
+                    <option value="">Select Category</option>
+                    <option value="Home Repair Services">Home Repair Services</option>
+                    <option value="Cleaning Services">Cleaning Services</option>
+                    <option value="Appliance Repair Services">Appliance Repair Services</option>
+                    <option value="Beauty and Wellness">Beauty and Wellness</option>
+                    <option value="Moving Services">Moving Services</option>
+                </select>
+                <div id="servicesList" class="services-list"></div>
+            </div>
+        </div>
+
+        <!-- Success Popup -->
+        <div id="successPopup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn1" id="closeSuccessPopup">&times;</span>
+                <h2>Success!</h2>
+                <p>Your request has been submitted successfully. <br> Matching with an expert nearby...</p>
+                <img src="pic/success_map.gif" alt="Success" class="success-image" style="width: auto;">
+                <p>You will be notified once the expert has been macthed.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Sign In/Sign Up Modal -->
+   <div id="authModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span> <!-- Close button -->
+        <h2>Sign In / Sign Up</h2>
+        <form id="authForm">
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" maxlength="10" pattern="[0-9]{10}" required>
+            <br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <div class="login-options">
+                <button type="submit" class="btn">Sign In</button>
+                <button type="button" id="gmailSignIn" class="btn">Sign In with Google</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+    <!-- Footer (Same as Landing Page) -->
+    <footer class="site-footer">
+        <p>&copy; 2024 Taltul Master. All rights reserved.</p>
+    </footer>
+
+    <!-- Dropdown Tray and Buttons (Same as Landing Page) -->
+    <div id="dropdownTray" class="dropdown-tray">
+        <a href="#" id="dropdownBtn" class="dropdown-btn">
+            <i id="toggleIcon" class="fas fa-chevron-left"></i>
+        </a>
+        <div id="buttonTray" class="button-tray">
+            <a href="#" id="goTopBtn" class="go-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+            <a href="#" id="searchBtn" class="search-btn"><i class="fas fa-search"></i></a>
+            <a href="#" id="chatboxBtn" class="chatbox-btn"><i class="fa-solid fa-message"></i></a>
+        </div>
+    </div>
+
+    <script src="script_start.js"></script> <!-- Your JS file -->
+
+    <script src="script.js"></script> <!-- Your JS file -->
+</body>
+</html>
