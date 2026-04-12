@@ -7,28 +7,33 @@
   <meta name="description" content="Physics researcher specializing in condensed matter, quantum materials, nanotechnology, and DFT simulations." />
   <meta name="author" content="Shreedip Kaini" />
 
-  <!-- Favicon (quantum atom emoji fallback) -->
+  <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚛️</text></svg>" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
 
   <!-- Styles -->
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="gate.css" />
 </head>
 <body>
+  <!-- Auth gate loads first, blocks portfolio until authenticated -->
+  <script src="gate.js"></script>
+
+  <!-- Portfolio app mounts here -->
   <div id="root"></div>
 
-  <!-- React via CDN (production) -->
+  <!-- React via CDN -->
   <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
   <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
 
-  <!-- Babel for JSX transform -->
+  <!-- Babel for JSX -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.9/babel.min.js"></script>
 
-  <!-- App -->
+  <!-- Portfolio App -->
   <script type="text/babel" src="app.jsx"></script>
 </body>
 </html>
