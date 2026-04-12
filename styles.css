@@ -1,0 +1,688 @@
+/* ═══════════════════════════════════════════
+   SHREEDIP KAINI — Quantum Portfolio
+   Theme: Dark Quantum Lattice
+   ═══════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap');
+
+/* ─── RESET & BASE ────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: radial-gradient(ellipse at 20% 0%, #0a1628 0%, #050c14 50%, #020608 100%);
+  color: #e0f7fa;
+  font-family: 'Source Serif 4', Georgia, serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(0, 220, 208, 0.3);
+  color: #fff;
+}
+
+a {
+  color: #00dcd0;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #5fffef;
+}
+
+/* ─── TYPOGRAPHY ──────────────────────── */
+.font-display {
+  font-family: 'Outfit', sans-serif;
+}
+
+.font-body {
+  font-family: 'Source Serif 4', Georgia, serif;
+}
+
+/* ─── ANIMATIONS ──────────────────────── */
+@keyframes pulse-line {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-stagger-0 { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes hero-stagger-1 { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes hero-stagger-2 { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes hero-stagger-3 { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes hero-stagger-4 { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+
+.hero-s0 { animation: hero-stagger-0 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both; }
+.hero-s1 { animation: hero-stagger-1 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.25s both; }
+.hero-s2 { animation: hero-stagger-2 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.4s both; }
+.hero-s3 { animation: hero-stagger-3 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.55s both; }
+.hero-s4 { animation: hero-stagger-4 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.7s both; }
+
+/* ─── QUANTUM CANVAS ─────────────────── */
+.quantum-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ─── NAV ─────────────────────────────── */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 0 24px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s;
+}
+
+.nav--scrolled {
+  background: rgba(5, 12, 20, 0.92);
+  backdrop-filter: blur(16px);
+  border-bottom-color: rgba(0, 220, 208, 0.1);
+}
+
+.nav__logo {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #00dcd0;
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+.nav__logo span {
+  color: #e0f7fa;
+}
+
+.nav__links {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.nav__link {
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #5a8a8f;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: transparent;
+  transition: all 0.2s;
+}
+.nav__link:hover {
+  color: #00dcd0;
+  background: rgba(0, 220, 208, 0.05);
+}
+.nav__link--active {
+  color: #00dcd0;
+  background: rgba(0, 220, 208, 0.08);
+}
+
+/* ─── SECTIONS ────────────────────────── */
+.section {
+  position: relative;
+  z-index: 1;
+  padding: 100px 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.section--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section__title {
+  margin-bottom: 48px;
+}
+.section__title h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(28px, 5vw, 42px);
+  font-weight: 700;
+  color: #e0f7fa;
+  letter-spacing: -0.02em;
+}
+.section__title h2 .dot {
+  color: #00dcd0;
+}
+.section__title .subtitle {
+  font-family: 'Source Serif 4', serif;
+  font-size: 16px;
+  color: #5a8a8f;
+  margin-top: 8px;
+  font-style: italic;
+}
+.section__title .line {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #00dcd0, transparent);
+  margin-top: 16px;
+  border-radius: 2px;
+}
+
+/* ─── HERO ────────────────────────────── */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 120px 24px 80px;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.hero__tag {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #00dcd0;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.hero__tag-line {
+  width: 24px;
+  height: 2px;
+  background: #00dcd0;
+  display: inline-block;
+}
+
+.hero__name {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(40px, 8vw, 80px);
+  font-weight: 800;
+  color: #e0f7fa;
+  margin-top: 16px;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+.hero__name .accent {
+  color: #00dcd0;
+}
+
+.hero__desc {
+  font-family: 'Source Serif 4', serif;
+  font-size: clamp(16px, 2.5vw, 20px);
+  color: #7ab0b5;
+  max-width: 600px;
+  line-height: 1.6;
+  margin-top: 24px;
+}
+.hero__desc .sub {
+  color: #5a8a8f;
+  font-size: 0.85em;
+}
+
+.hero__stats {
+  display: flex;
+  gap: 12px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  padding: 12px 20px;
+  border: 1px solid rgba(0, 220, 208, 0.15);
+  border-radius: 10px;
+  background: rgba(0, 220, 208, 0.03);
+}
+.stat-card__val {
+  font-family: 'Outfit', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #00dcd0;
+}
+.stat-card__label {
+  font-family: 'Outfit', sans-serif;
+  font-size: 11px;
+  color: #5a8a8f;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.hero__scroll {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.hero__scroll-text {
+  font-family: 'Outfit', sans-serif;
+  font-size: 10px;
+  color: #3a6a6f;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+.hero__scroll-line {
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(180deg, #00dcd0, transparent);
+  animation: pulse-line 2s infinite;
+}
+
+/* ─── ABOUT ───────────────────────────── */
+.about__text {
+  font-size: 17px;
+  color: #a0cdd0;
+  line-height: 1.75;
+}
+.about__text--dim {
+  color: #7ab0b5;
+  margin-top: 20px;
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.info-card {
+  padding: 20px;
+  border-radius: 12px;
+  background: rgba(0, 220, 208, 0.03);
+  border: 1px solid rgba(0, 220, 208, 0.08);
+}
+.info-card__label {
+  font-family: 'Outfit', sans-serif;
+  font-size: 11px;
+  color: #5a8a8f;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 6px;
+}
+.info-card__value {
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #e0f7fa;
+}
+
+/* ─── RESEARCH CARDS ──────────────────── */
+.research-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.research-card {
+  padding: 28px;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 220, 208, 0.08);
+  background: rgba(5, 12, 20, 0.6);
+  transition: all 0.3s;
+}
+.research-card:hover {
+  border-color: rgba(0, 220, 208, 0.3);
+  background: rgba(0, 220, 208, 0.04);
+  transform: translateY(-2px);
+}
+
+.research-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.research-card__period {
+  font-family: 'Outfit', sans-serif;
+  font-size: 11px;
+  color: #5a8a8f;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.status-badge {
+  font-family: 'Outfit', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+.status-badge--active   { color: #00ff88; border: 1px solid rgba(0,255,136,0.2); background: rgba(0,255,136,0.05); }
+.status-badge--completed { color: #00dcd0; border: 1px solid rgba(0,220,208,0.2); background: rgba(0,220,208,0.05); }
+.status-badge--published { color: #f5a623; border: 1px solid rgba(245,166,35,0.2); background: rgba(245,166,35,0.05); }
+
+.research-card__title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #e0f7fa;
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+.research-card__org {
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px;
+  color: #00dcd0;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.research-card__desc {
+  font-family: 'Source Serif 4', serif;
+  font-size: 14px;
+  color: #7ab0b5;
+  line-height: 1.65;
+  margin-bottom: 16px;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  font-family: 'Outfit', sans-serif;
+  font-size: 11px;
+  color: #00dcd0;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: rgba(0, 220, 208, 0.08);
+  border: 1px solid rgba(0, 220, 208, 0.12);
+}
+
+/* ─── PUBLICATIONS ────────────────────── */
+.pub-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.pub-card {
+  padding: 24px;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 220, 208, 0.08);
+  background: rgba(5, 12, 20, 0.6);
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.pub-card__year {
+  font-family: 'Outfit', sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  color: rgba(0, 220, 208, 0.15);
+  line-height: 1;
+  min-width: 70px;
+  flex-shrink: 0;
+}
+
+.pub-card__title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #e0f7fa;
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.pub-card__authors {
+  font-family: 'Source Serif 4', serif;
+  font-size: 14px;
+  color: #7ab0b5;
+  margin-bottom: 4px;
+}
+
+.pub-card__journal {
+  font-family: 'Outfit', sans-serif;
+  font-size: 12px;
+  color: #5a8a8f;
+}
+
+/* ─── SKILLS ──────────────────────────── */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+}
+
+.skill-cat__name {
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #00dcd0;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.skill-cat__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-chip {
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px;
+  color: #c0e8eb;
+  padding: 6px 14px;
+  border-radius: 8px;
+  background: rgba(0, 220, 208, 0.06);
+  border: 1px solid rgba(0, 220, 208, 0.1);
+  transition: all 0.2s;
+}
+.skill-chip:hover {
+  background: rgba(0, 220, 208, 0.12);
+  border-color: rgba(0, 220, 208, 0.25);
+  color: #e0f7fa;
+}
+
+/* ─── AWARDS TIMELINE ─────────────────── */
+.awards-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.timeline-item__icon {
+  min-width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(0, 220, 208, 0.08);
+  border: 1px solid rgba(0, 220, 208, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.timeline-item__year {
+  font-family: 'Outfit', sans-serif;
+  font-size: 11px;
+  color: #5a8a8f;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.timeline-item__title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #e0f7fa;
+  margin: 4px 0;
+}
+
+.timeline-item__detail {
+  font-family: 'Source Serif 4', serif;
+  font-size: 14px;
+  color: #7ab0b5;
+  line-height: 1.5;
+}
+
+/* ─── EDUCATION ───────────────────────── */
+.edu-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.edu-card {
+  padding: 24px;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 220, 208, 0.08);
+  background: rgba(5, 12, 20, 0.6);
+  transition: all 0.3s;
+}
+.edu-card:hover {
+  border-color: rgba(0, 220, 208, 0.2);
+}
+
+.edu-card__degree {
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #e0f7fa;
+  margin-bottom: 4px;
+}
+
+.edu-card__school {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  color: #00dcd0;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.edu-card__meta {
+  font-family: 'Outfit', sans-serif;
+  font-size: 12px;
+  color: #5a8a8f;
+  margin-bottom: 12px;
+}
+
+.edu-card__thesis {
+  font-family: 'Source Serif 4', serif;
+  font-size: 14px;
+  color: #7ab0b5;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+/* ─── CONTACT ─────────────────────────── */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 20px;
+  border-radius: 12px;
+  background: rgba(0, 220, 208, 0.03);
+  border: 1px solid rgba(0, 220, 208, 0.08);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.contact-card:hover {
+  border-color: rgba(0, 220, 208, 0.2);
+  background: rgba(0, 220, 208, 0.06);
+}
+
+.contact-card__icon {
+  font-size: 24px;
+}
+
+.contact-card__label {
+  font-family: 'Outfit', sans-serif;
+  font-size: 11px;
+  color: #5a8a8f;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.contact-card__value {
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #e0f7fa;
+}
+
+/* ─── FOOTER ──────────────────────────── */
+.footer {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 32px 24px;
+  border-top: 1px solid rgba(0, 220, 208, 0.06);
+}
+
+.footer__text {
+  font-family: 'Outfit', sans-serif;
+  font-size: 12px;
+  color: #3a5a5f;
+}
+
+/* ─── RESPONSIVE ──────────────────────── */
+@media (max-width: 640px) {
+  .nav__links {
+    gap: 4px;
+  }
+  .nav__link {
+    font-size: 11px;
+    padding: 5px 8px;
+  }
+  .pub-card {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .section {
+    padding: 60px 16px;
+  }
+  .hero {
+    padding: 100px 16px 60px;
+  }
+}
