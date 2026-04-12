@@ -342,7 +342,7 @@ function App() {
         "Physics student exploring the interplay between emergence and reductionism. Research spans DFT simulations of molecular adsorption, synthesis of 2D TMDC nanomaterials, and quantum computing algorithms. Skilled in bridging first-principles computation with experimental characterization — from Quantum ESPRESSO to wet-lab synthesis and SEM/XRD/Raman analysis."
       ),
       React.createElement("p", { className: "about__text about__text--dim" },
-        "Currently at NAST working on defect engineering in wide band-gap semiconductors and band engineering in 2D heterojunctions. Pursuing MSc in Physics with focus on condensed matter, quantum materials, and low-dimensional systems."
+        "Currently at NAST working on defect engineering in wide band-gap semiconductors and band engineering in 2D heterojunctions. Looking forward to pursue MSc in Physics with focus on condensed matter, quantum materials, and low-dimensional systems."
       ),
       React.createElement("div", { className: "about__grid" },
         [
