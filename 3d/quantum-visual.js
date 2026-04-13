@@ -55,6 +55,7 @@
     /* Iframe */
     ".qv-wrap iframe {",
     "  width: 100%; height: 100%;",
+    "  clip-path: inset(0 0 15% 0);",
     "  border: none;",
     "  filter: brightness(0.40) saturate(0.50) contrast(1.2);",
     "  transition: filter 0.5s ease;",
@@ -70,7 +71,7 @@
     /* Top cover */
     ".qv-cover-top {",
     "  position: absolute; top: 0; left: 0; right: 0;",
-    "  height: 50px; z-index: 1; pointer-events: hover;",
+    "  height: 50px; z-index: 1; pointer-events: auto;",
     "  background: linear-gradient(180deg, rgba(5,12,20,0.5) 0%, transparent 100%);",
     "}",
 
