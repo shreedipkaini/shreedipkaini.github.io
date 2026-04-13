@@ -70,7 +70,7 @@
     /* Top cover */
     ".qv-cover-top {",
     "  position: absolute; top: 0; left: 0; right: 0;",
-    "  height: 50px; z-index: 1; pointer-events: none;",
+    "  height: 50px; z-index: 1; pointer-events: hover;",
     "  background: linear-gradient(180deg, rgba(5,12,20,0.5) 0%, transparent 100%);",
     "}",
 
