@@ -60,13 +60,12 @@
     "  transition: filter 0.5s ease;",
     "}",
 
-
-    /* Bottom cover — hides "click & hold", watermark */
-    ".qv-cover-bot {",
-    "  position: absolute; bottom: 0; left: 0; right: 0;",
-    "  height: 130px; z-index: 1; pointer-events: none;",
-    "  background: linear-gradient(0deg, rgba(5,12,20,1) 0%, rgba(5,12,20,0.7) 50%, transparent 100%);",
+    /* Hover — brighten + interactive */
+    ".qv-wrap--live:hover { pointer-events: auto; }",
+    ".qv-wrap--live:hover iframe {",
+    "  filter: brightness(0.45) saturate(0.65) contrast(1.15);",
     "}",
+
 
     /* Top cover */
     ".qv-cover-top {",
