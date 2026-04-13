@@ -25,7 +25,7 @@
     }
     .qv-container iframe {
       width: 100%;
-      height: 100%;
+      height: 80%;
       border: none;
       pointer-events: none;
     }
@@ -64,7 +64,7 @@
       border-radius: 8px;
       background: rgba(5, 12, 20, 0.8);
       border: 1px solid rgba(0, 220, 208, 0.1);
-      backdrop-filter: blur(8px);
+      backdrop-filter: blur(9px);
       transition: opacity 0.5s;
     }
   `;
@@ -77,7 +77,7 @@
   // Fade overlay (controls opacity of background showing through)
   const fadeOverlay = document.createElement("div");
   fadeOverlay.className = "qv-fade";
-  fadeOverlay.style.opacity = "0.35";
+  fadeOverlay.style.opacity = "0.65";
   document.body.appendChild(fadeOverlay);
 
   // Container
