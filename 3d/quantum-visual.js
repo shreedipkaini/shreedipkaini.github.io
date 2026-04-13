@@ -60,11 +60,6 @@
     "  transition: filter 0.5s ease;",
     "}",
 
-    /* Hover — brighten + interactive */
-    ".qv-wrap--live:hover { pointer-events: auto; }",
-    ".qv-wrap--live:hover iframe {",
-    "  filter: brightness(0.45) saturate(0.65) contrast(1.15);",
-    "}",
 
     /* Bottom cover — hides "click & hold", watermark */
     ".qv-cover-bot {",
