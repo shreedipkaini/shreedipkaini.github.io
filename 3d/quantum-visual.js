@@ -77,7 +77,7 @@
   // Fade overlay (controls opacity of background showing through)
   const fadeOverlay = document.createElement("div");
   fadeOverlay.className = "qv-fade";
-  fadeOverlay.style.opacity = "0.65";
+  fadeOverlay.style.opacity = "0.35";
   document.body.appendChild(fadeOverlay);
 
   // Container
