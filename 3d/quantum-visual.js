@@ -55,7 +55,6 @@
     /* Iframe */
     ".qv-wrap iframe {",
     "  width: 100%; height: 100%;",
-    "  clip-path: inset(0 0 15% 0);",
     "  border: none;",
     "  filter: brightness(0.40) saturate(0.50) contrast(1.2);",
     "  transition: filter 0.5s ease;",
