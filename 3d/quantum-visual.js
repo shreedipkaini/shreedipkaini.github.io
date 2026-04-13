@@ -56,14 +56,14 @@
     ".qv-wrap iframe {",
     "  width: 100%; height: 100%;",
     "  border: none;",
-    "  filter: brightness(0.30) saturate(0.50) contrast(1.2);",
+    "  filter: brightness(0.40) saturate(0.50) contrast(1.2);",
     "  transition: filter 0.5s ease;",
     "}",
 
     /* Hover — brighten + interactive */
     ".qv-wrap--live:hover { pointer-events: auto; }",
     ".qv-wrap--live:hover iframe {",
-    "  filter: brightness(0.45) saturate(0.65) contrast(1.15);",
+    "  filter: brightness(0.55) saturate(0.65) contrast(1.15);",
     "}",
 
 
@@ -84,8 +84,8 @@
     /* Mobile */
     "@media (max-width: 768px) {",
     "  .qv-wrap { right: -20%; width: 90%; }",
-    "  .qv-wrap iframe { filter: brightness(0.18) saturate(0.35) contrast(1.15); }",
-    "  .qv-wrap--live:hover iframe { filter: brightness(0.28) saturate(0.5) contrast(1.1); }",
+    "  .qv-wrap iframe { filter: brightness(0.22) saturate(0.35) contrast(1.15); }",
+    "  .qv-wrap--live:hover iframe { filter: brightness(0.34) saturate(0.5) contrast(1.1); }",
     "}",
   ].join("\n");
   document.head.appendChild(css);
