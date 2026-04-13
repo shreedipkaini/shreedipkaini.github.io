@@ -111,8 +111,7 @@
     "&ui_stop=0&ui_inspector=0&ui_watermark_link=0&ui_watermark=0" +
     "&ui_infos=0&ui_ar=0&ui_help=0&ui_settings=0&ui_vr=0" +
     "&ui_fullscreen=0&ui_annotations=0&ui_fadeout=0&ui_controls=0" +
-    "&ui_general_controls=0&ui_loading=0&ui_hint=0" +
-    "&scrollwheel=0&double_click=0";
+    "&ui_general_controls=0&ui_loading=0&ui_hint=0";
   wrap.appendChild(iframe);
 
   // Covers
