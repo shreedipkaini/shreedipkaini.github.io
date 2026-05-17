@@ -1,0 +1,2508 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Calibrated for Eichhorn &amp; Heisenberg | 30-min BSc-level interview" />
+  <title>Heidelberg MSc Physics Interview Guide</title>
+  <style>
+    html {
+      font-size: 11pt;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: blue;
+    }
+    a:visited {
+      color: blue;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <style>
+  /* Heidelberg Interview Guide — Custom Styles */
+
+  :root {
+    --primary: #b00020;
+    --secondary: #c77700;
+    --tertiary: #2e7d32;
+    --text: #1a1a1a;
+    --muted: #555;
+    --bg: #fafafa;
+    --paper: #ffffff;
+    --border: #e0e0e0;
+    --code-bg: #f5f5f5;
+    --quote-bg: #fff8e1;
+    --quote-border: #c77700;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --primary: #ff6b80;
+      --secondary: #ffb84d;
+      --tertiary: #7dc88f;
+      --text: #e8e8e8;
+      --muted: #b0b0b0;
+      --bg: #1a1a1a;
+      --paper: #242424;
+      --border: #3a3a3a;
+      --code-bg: #2a2a2a;
+      --quote-bg: #2a2515;
+      --quote-border: #ffb84d;
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2em 3em;
+  }
+
+  @media (max-width: 700px) {
+    body {
+      padding: 1em;
+      font-size: 15px;
+    }
+  }
+
+  h1, h2, h3, h4 {
+    font-weight: 600;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    color: var(--text);
+    line-height: 1.3;
+  }
+
+  h1 {
+    font-size: 1.8em;
+    border-bottom: 3px solid var(--primary);
+    padding-bottom: 0.3em;
+    margin-top: 2em;
+    page-break-before: always;
+  }
+
+  h1:first-of-type {
+    margin-top: 0;
+  }
+
+  h2 {
+    font-size: 1.35em;
+    color: var(--primary);
+    margin-top: 1.5em;
+    border-left: 4px solid var(--primary);
+    padding-left: 0.6em;
+  }
+
+  h3 {
+    font-size: 1.1em;
+    color: var(--secondary);
+    margin-top: 1.2em;
+  }
+
+  h4 {
+    font-size: 1em;
+    font-style: italic;
+    color: var(--muted);
+  }
+
+  p {
+    margin: 0.7em 0;
+  }
+
+  strong {
+    color: var(--text);
+    font-weight: 600;
+  }
+
+  em {
+    color: var(--muted);
+  }
+
+  ul, ol {
+    margin: 0.7em 0;
+    padding-left: 1.8em;
+  }
+
+  li {
+    margin: 0.3em 0;
+  }
+
+  blockquote {
+    background: var(--quote-bg);
+    border-left: 4px solid var(--quote-border);
+    margin: 0.8em 0;
+    padding: 0.6em 1em;
+    color: var(--text);
+    border-radius: 4px;
+  }
+
+  blockquote p {
+    margin: 0.3em 0;
+  }
+
+  code {
+    background: var(--code-bg);
+    padding: 0.1em 0.4em;
+    border-radius: 3px;
+    font-size: 0.9em;
+    font-family: "SF Mono", Consolas, "Liberation Mono", monospace;
+  }
+
+  pre code {
+    display: block;
+    padding: 1em;
+    overflow-x: auto;
+  }
+
+  /* Star markers stand out */
+  p:has(strong:first-child:contains("⭐⭐⭐")),
+  p strong:first-child {
+    /* placeholder */
+  }
+
+  /* Table of Contents */
+  #TOC {
+    background: var(--paper);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5em 2em;
+    margin: 2em 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+
+  #TOC ul {
+    list-style: none;
+    padding-left: 1em;
+  }
+
+  #TOC > ul {
+    padding-left: 0;
+  }
+
+  #TOC a {
+    color: var(--text);
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.15em 0;
+  }
+
+  #TOC a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+  }
+
+  #TOC ul ul a {
+    font-size: 0.95em;
+    color: var(--muted);
+  }
+
+  /* Title block */
+  header#title-block-header {
+    text-align: center;
+    margin-bottom: 3em;
+    padding-bottom: 2em;
+    border-bottom: 2px solid var(--border);
+  }
+
+  h1.title {
+    border: none;
+    font-size: 2.2em;
+    color: var(--primary);
+    margin-bottom: 0.3em;
+    page-break-before: avoid;
+  }
+
+  p.subtitle {
+    font-size: 1.2em;
+    color: var(--muted);
+    font-style: italic;
+    margin: 0.3em 0;
+  }
+
+  p.author {
+    color: var(--muted);
+    font-size: 1em;
+    margin: 0.5em 0;
+  }
+
+  /* Inline math gets readable font size */
+  .math {
+    font-size: 1.05em;
+  }
+
+  /* Print styles */
+  @media print {
+    body {
+      font-size: 11pt;
+      max-width: none;
+      padding: 0;
+    }
+    h1 {
+      page-break-before: always;
+    }
+    h1:first-of-type {
+      page-break-before: avoid;
+    }
+  }
+
+  /* A small highlight box for the priority legend / cheat sheets */
+  table {
+    border-collapse: collapse;
+    margin: 1em 0;
+    width: 100%;
+  }
+
+  th, td {
+    border: 1px solid var(--border);
+    padding: 0.5em 0.8em;
+    text-align: left;
+  }
+
+  th {
+    background: var(--code-bg);
+    font-weight: 600;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 2em 0;
+  }
+
+  /* Make star sequences visually distinct */
+  p strong {
+    color: var(--primary);
+  }
+
+  /* Subtle in-text examiner notes */
+  p:has(strong + em) {
+    background: var(--code-bg);
+  }
+  </style>
+  <script>
+    MathJax = {
+      tex: { inlineMath: [['$','$'], ['\\(','\\)']], displayMath: [['$$','$$'], ['\\[','\\]']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Heidelberg MSc Physics Interview Guide</h1>
+<p class="subtitle">Chapter-by-Chapter Question Bank from <em>Moderne
+Physik 2</em> (Konrad/Bartelmann)</p>
+<p class="author">Calibrated for Eichhorn &amp; Heisenberg | 30-min
+BSc-level interview</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#how-to-use-this-document"
+id="toc-how-to-use-this-document">How to Use This Document</a>
+<ul>
+<li><a href="#question-depth-calibrated-to-the-actual-interview-style"
+id="toc-question-depth-calibrated-to-the-actual-interview-style">Question
+depth, calibrated to the actual interview style</a></li>
+<li><a href="#priority-legend" id="toc-priority-legend">Priority
+legend</a></li>
+<li><a href="#how-each-chapter-is-structured"
+id="toc-how-each-chapter-is-structured">How each chapter is
+structured</a></li>
+</ul></li>
+<li><a href="#chapter-1-introduction-einleitende-bemerkungen"
+id="toc-chapter-1-introduction-einleitende-bemerkungen">Chapter 1 —
+Introduction (<em>Einleitende Bemerkungen</em>)</a>
+<ul>
+<li><a href="#what-this-chapter-covers"
+id="toc-what-this-chapter-covers">What this chapter covers</a></li>
+<li><a href="#subject-knowledge-expected"
+id="toc-subject-knowledge-expected">Subject knowledge expected</a></li>
+<li><a href="#likely-questions" id="toc-likely-questions">Likely
+questions</a></li>
+</ul></li>
+<li><a href="#chapter-2-classical-mechanics-1-newtonsche-axiome"
+id="toc-chapter-2-classical-mechanics-1-newtonsche-axiome">Chapter 2 —
+Classical Mechanics 1 (<em>Newton’sche Axiome</em>)</a>
+<ul>
+<li><a href="#what-this-chapter-covers-1"
+id="toc-what-this-chapter-covers-1">What this chapter covers</a></li>
+<li><a href="#subject-knowledge-expected-1"
+id="toc-subject-knowledge-expected-1">Subject knowledge
+expected</a></li>
+<li><a href="#likely-questions-1" id="toc-likely-questions-1">Likely
+questions</a></li>
+</ul></li>
+<li><a href="#chapter-3-groups-einschub-gruppen"
+id="toc-chapter-3-groups-einschub-gruppen">Chapter 3 — Groups
+(<em>Einschub: Gruppen</em>)</a>
+<ul>
+<li><a href="#what-this-chapter-covers-2"
+id="toc-what-this-chapter-covers-2">What this chapter covers</a></li>
+<li><a href="#subject-knowledge-expected-2"
+id="toc-subject-knowledge-expected-2">Subject knowledge
+expected</a></li>
+<li><a href="#likely-questions-2" id="toc-likely-questions-2">Likely
+questions</a></li>
+</ul></li>
+<li><a href="#chapter-4-classical-mechanics-2-analytical-mechanics"
+id="toc-chapter-4-classical-mechanics-2-analytical-mechanics">Chapter 4
+— Classical Mechanics 2: Analytical Mechanics</a>
+<ul>
+<li><a href="#what-this-chapter-covers-3"
+id="toc-what-this-chapter-covers-3">What this chapter covers</a></li>
+<li><a href="#subject-knowledge-expected-3"
+id="toc-subject-knowledge-expected-3">Subject knowledge
+expected</a></li>
+<li><a href="#likely-questions-3" id="toc-likely-questions-3">Likely
+questions</a></li>
+</ul></li>
+<li><a
+href="#chapter-5-special-relativity-spezielle-relativitätstheorie"
+id="toc-chapter-5-special-relativity-spezielle-relativitätstheorie">Chapter
+5 — Special Relativity (<em>Spezielle Relativitätstheorie</em>)</a>
+<ul>
+<li><a href="#what-this-chapter-covers-4"
+id="toc-what-this-chapter-covers-4">What this chapter covers</a></li>
+<li><a href="#subject-knowledge-expected-4"
+id="toc-subject-knowledge-expected-4">Subject knowledge
+expected</a></li>
+<li><a href="#likely-questions-4" id="toc-likely-questions-4">Likely
+questions</a></li>
+</ul></li>
+<li><a href="#chapter-6-electrodynamics-elektrodynamik"
+id="toc-chapter-6-electrodynamics-elektrodynamik">Chapter 6 —
+Electrodynamics (<em>Elektrodynamik</em>)</a>
+<ul>
+<li><a href="#what-this-chapter-covers-5"
+id="toc-what-this-chapter-covers-5">What this chapter covers</a></li>
+<li><a href="#subject-knowledge-expected-5"
+id="toc-subject-knowledge-expected-5">Subject knowledge
+expected</a></li>
+<li><a href="#likely-questions-5" id="toc-likely-questions-5">Likely
+questions</a></li>
+</ul></li>
+<li><a href="#chapter-7-quantum-mechanics-1-foundations"
+id="toc-chapter-7-quantum-mechanics-1-foundations">Chapter 7 — Quantum
+Mechanics 1 (Foundations)</a>
+<ul>
+<li><a href="#what-this-chapter-covers-6"
+id="toc-what-this-chapter-covers-6">What this chapter covers</a></li>
+<li><a href="#subject-knowledge-expected-6"
+id="toc-subject-knowledge-expected-6">Subject knowledge
+expected</a></li>
+<li><a href="#likely-questions-6" id="toc-likely-questions-6">Likely
+questions</a></li>
+</ul></li>
+<li><a href="#chapter-8-operators-in-quantum-mechanics"
+id="toc-chapter-8-operators-in-quantum-mechanics">Chapter 8 — Operators
+in Quantum Mechanics</a>
+<ul>
+<li><a href="#what-this-chapter-covers-7"
+id="toc-what-this-chapter-covers-7">What this chapter covers</a></li>
+<li><a href="#subject-knowledge-expected-7"
+id="toc-subject-knowledge-expected-7">Subject knowledge
+expected</a></li>
+<li><a href="#likely-questions-7" id="toc-likely-questions-7">Likely
+questions</a></li>
+</ul></li>
+<li><a href="#chapter-9-quantum-mechanics-2-axioms-and-solutions"
+id="toc-chapter-9-quantum-mechanics-2-axioms-and-solutions">Chapter 9 —
+Quantum Mechanics 2: Axioms and Solutions</a>
+<ul>
+<li><a href="#what-this-chapter-covers-8"
+id="toc-what-this-chapter-covers-8">What this chapter covers</a></li>
+<li><a href="#subject-knowledge-expected-8"
+id="toc-subject-knowledge-expected-8">Subject knowledge
+expected</a></li>
+<li><a href="#likely-questions-8" id="toc-likely-questions-8">Likely
+questions</a></li>
+</ul></li>
+<li><a href="#chapter-10-thermodynamics-1"
+id="toc-chapter-10-thermodynamics-1">Chapter 10 — Thermodynamics 1</a>
+<ul>
+<li><a href="#what-this-chapter-covers-9"
+id="toc-what-this-chapter-covers-9">What this chapter covers</a></li>
+<li><a href="#subject-knowledge-expected-9"
+id="toc-subject-knowledge-expected-9">Subject knowledge
+expected</a></li>
+<li><a href="#likely-questions-9" id="toc-likely-questions-9">Likely
+questions</a></li>
+</ul></li>
+<li><a href="#chapter-11-thermodynamics-2-laws-and-engines"
+id="toc-chapter-11-thermodynamics-2-laws-and-engines">Chapter 11 —
+Thermodynamics 2: Laws and Engines</a>
+<ul>
+<li><a href="#what-this-chapter-covers-10"
+id="toc-what-this-chapter-covers-10">What this chapter covers</a></li>
+<li><a href="#subject-knowledge-expected-10"
+id="toc-subject-knowledge-expected-10">Subject knowledge
+expected</a></li>
+<li><a href="#likely-questions-10" id="toc-likely-questions-10">Likely
+questions</a></li>
+</ul></li>
+<li><a href="#chapter-12-gauging-eichung"
+id="toc-chapter-12-gauging-eichung">Chapter 12 — Gauging
+(<em>Eichung</em>)</a>
+<ul>
+<li><a href="#what-this-chapter-covers-11"
+id="toc-what-this-chapter-covers-11">What this chapter covers</a></li>
+<li><a href="#subject-knowledge-expected-11"
+id="toc-subject-knowledge-expected-11">Subject knowledge
+expected</a></li>
+<li><a href="#likely-questions-11" id="toc-likely-questions-11">Likely
+questions</a></li>
+</ul></li>
+<li><a href="#chapter-13-quantum-field-theory-eichhorns-domain"
+id="toc-chapter-13-quantum-field-theory-eichhorns-domain">Chapter 13 —
+Quantum Field Theory (★★★ EICHHORN’S DOMAIN)</a>
+<ul>
+<li><a href="#what-this-chapter-covers-12"
+id="toc-what-this-chapter-covers-12">What this chapter covers</a></li>
+<li><a href="#subject-knowledge-expected-12"
+id="toc-subject-knowledge-expected-12">Subject knowledge
+expected</a></li>
+<li><a href="#likely-questions-12" id="toc-likely-questions-12">Likely
+questions</a></li>
+</ul></li>
+<li><a href="#chapter-14-general-relativity-heisenbergs-domain"
+id="toc-chapter-14-general-relativity-heisenbergs-domain">Chapter 14 —
+General Relativity (★★★ HEISENBERG’S DOMAIN)</a>
+<ul>
+<li><a href="#what-this-chapter-covers-13"
+id="toc-what-this-chapter-covers-13">What this chapter covers</a></li>
+<li><a href="#subject-knowledge-expected-13"
+id="toc-subject-knowledge-expected-13">Subject knowledge
+expected</a></li>
+<li><a href="#likely-questions-13" id="toc-likely-questions-13">Likely
+questions</a></li>
+</ul></li>
+<li><a href="#chapter-15-summary-space-time-dynamics-and-information"
+id="toc-chapter-15-summary-space-time-dynamics-and-information">Chapter
+15 — Summary: Space, Time, Dynamics, and Information</a>
+<ul>
+<li><a href="#what-this-chapter-covers-14"
+id="toc-what-this-chapter-covers-14">What this chapter covers</a></li>
+<li><a href="#likely-questions-14" id="toc-likely-questions-14">Likely
+questions</a></li>
+</ul></li>
+<li><a href="#cross-cutting-examiner-cheat-sheet"
+id="toc-cross-cutting-examiner-cheat-sheet">Cross-cutting Examiner Cheat
+Sheet</a>
+<ul>
+<li><a href="#tier-1-questions-ranked-by-combined-examiner-relevance"
+id="toc-tier-1-questions-ranked-by-combined-examiner-relevance">Tier-1
+questions, ranked by combined examiner relevance</a></li>
+<li><a href="#strategic-tips-distilled"
+id="toc-strategic-tips-distilled">Strategic tips, distilled</a></li>
+<li><a href="#what-not-to-do" id="toc-what-not-to-do">What NOT to
+do</a></li>
+<li><a href="#reading-list-last-days-before-the-interview"
+id="toc-reading-list-last-days-before-the-interview">Reading list — last
+days before the interview</a></li>
+</ul></li>
+</ul>
+</nav>
+<section id="how-to-use-this-document" class="level1">
+<h1>How to Use This Document</h1>
+<p>This guide follows the structure of <em>Moderne Physik 2</em> by Sara
+Konrad and Matthias Bartelmann (Institute for Theoretical Physics,
+Heidelberg University). Prof. Bartelmann is in the cosmology group at
+Heidelberg — the same group as Prof. Heisenberg — so this textbook is
+essentially the curated Heidelberg view of modern physics. The TOC of
+this book maps almost exactly onto the territory Prof. Eichhorn (quantum
+gravity / QFT) and Prof. Heisenberg (cosmology / modified gravity) will
+examine.</p>
+<section id="question-depth-calibrated-to-the-actual-interview-style"
+class="level2">
+<h2>Question depth, calibrated to the actual interview style</h2>
+<p>From the interview reference document we have (a successful
+Heidelberg MSc interview transcript), the depth required is:</p>
+<ul>
+<li><strong>Keywords beat elaborate explanations.</strong> Quick
+conceptual response, not full derivation.</li>
+<li><strong>Headline answer first</strong>, follow-ups invited.</li>
+<li><strong>Symmetry arguments win points.</strong> “Discretized because
+of boundary conditions / symmetry.”</li>
+<li><strong>Pointing in the right direction is enough.</strong> (“We
+make a typical ansatz” — they’ll ask what kind only if they want
+detail.)</li>
+<li><strong>Be honest when you set <span
+class="math inline">ℏ = 1</span> or use natural units.</strong>
+Examiners notice and reward the awareness.</li>
+<li><strong>Breadth <span class="math inline">&gt;</span>
+depth.</strong> A wide span of topics will be probed; each one only ~1–2
+minutes.</li>
+</ul>
+</section>
+<section id="priority-legend" class="level2">
+<h2>Priority legend</h2>
+<ul>
+<li>⭐⭐⭐ ** <span class="math inline">=</span> very likely to be
+asked** (central to one or both examiners’ research)</li>
+<li>⭐⭐ ** <span class="math inline">=</span> probable in a 30-minute
+interview**</li>
+<li>⭐ ** <span class="math inline">=</span> possible, lower
+priority**</li>
+</ul>
+</section>
+<section id="how-each-chapter-is-structured" class="level2">
+<h2>How each chapter is structured</h2>
+<p>For every chapter in <em>Moderne Physik 2</em> you get:</p>
+<ol type="1">
+<li><strong>What this chapter covers</strong> — the topics taught</li>
+<li><strong>Subject knowledge expected</strong> — bullet list of things
+you must know</li>
+<li><strong>Main interview questions</strong> — with concise
+keyword-style model answers</li>
+<li><strong>Follow-ups</strong> — the cross-questions interviewers
+typically fire after the first answer</li>
+<li><strong>Examiner notes</strong> — which professor cares about this
+and why</li>
+</ol>
+</section>
+</section>
+<section id="chapter-1-introduction-einleitende-bemerkungen"
+class="level1">
+<h1>Chapter 1 — Introduction (<em>Einleitende Bemerkungen</em>)</h1>
+<section id="what-this-chapter-covers" class="level2">
+<h2>What this chapter covers</h2>
+<ul>
+<li>Why we study modern physics (1920s+ developments)</li>
+<li>Definition: physics is “modern” if it includes relativity and
+quantum theory</li>
+<li>Role of theoretical physics: find mathematical structures for
+experimental phenomena</li>
+<li>Foundational ideas: space, time, dynamics, forces</li>
+</ul>
+</section>
+<section id="subject-knowledge-expected" class="level2">
+<h2>Subject knowledge expected</h2>
+<ul>
+<li>Theoretical physics maps phenomena onto mathematical structures</li>
+<li>Modern physics <span class="math inline">=</span> relativity <span
+class="math inline">+</span> quantum theory</li>
+<li>Field theories assign their own dynamics to forces, unlike Newtonian
+mechanics</li>
+</ul>
+</section>
+<section id="likely-questions" class="level2">
+<h2>Likely questions</h2>
+<p><strong>⭐ Q1.1: Why is modern physics called
+<em>modern</em>?</strong></p>
+<p><em>Model answer:</em> Because it incorporates
+<strong>relativity</strong> and <strong>quantum theory</strong> — both
+developed after 1900. Classical (pre-modern) physics treats space, time,
+and matter as absolute and continuous; modern physics revises all
+three.</p>
+<p><strong>⭐ Q1.2: What is the role of theoretical
+physics?</strong></p>
+<p><em>Model answer:</em> To find <strong>mathematical
+structures</strong> that map experimental phenomena, and to derive
+<strong>testable predictions</strong> from them. Mathematics is the
+language; experiment is the arbiter.</p>
+<p><strong>⭐ Q1.3: Why is GPS impossible without general
+relativity?</strong></p>
+<p><em>Model answer:</em> GPS satellites orbit at high altitude (weak
+gravity, time runs faster) and high speed (special-relativistic time
+dilation, time runs slower). The two effects don’t cancel — net is about
+<span class="math inline"> + 38 <em>μ</em>s/day</span> that must be
+corrected, or positions would drift by <span
+class="math inline"> ∼ 10</span> km/day.</p>
+</section>
+</section>
+<section id="chapter-2-classical-mechanics-1-newtonsche-axiome"
+class="level1">
+<h1>Chapter 2 — Classical Mechanics 1 (<em>Newton’sche Axiome</em>)</h1>
+<section id="what-this-chapter-covers-1" class="level2">
+<h2>What this chapter covers</h2>
+<ul>
+<li>Aims of classical mechanics: predict motion given forces</li>
+<li>Concepts of space and time (absolute in Newton, relative in
+Einstein)</li>
+<li>Newton’s three axioms</li>
+<li>Inertial frames and Galilean invariance</li>
+</ul>
+</section>
+<section id="subject-knowledge-expected-1" class="level2">
+<h2>Subject knowledge expected</h2>
+<ul>
+<li>All three of Newton’s axioms, including the <strong>fundamental form
+<span
+class="math inline"><strong>F</strong> = <em>d</em><strong>p</strong>/<em>d</em><em>t</em></span></strong></li>
+<li>Why we prefer momentum over acceleration</li>
+<li>Definition of an inertial frame</li>
+<li>Galilean transformations and which quantities are invariant</li>
+</ul>
+</section>
+<section id="likely-questions-1" class="level2">
+<h2>Likely questions</h2>
+<p><strong>⭐⭐⭐ Q2.1: State Newton’s second law.</strong></p>
+<p><em>Model answer:</em> In its most general form, <strong><span
+class="math inline"><strong>F</strong> = <em>d</em><strong>p</strong>/<em>d</em><em>t</em></span></strong>.
+The familiar <span
+class="math inline"><strong>F</strong> = <em>m</em><strong>a</strong></span>
+is a special case when mass is constant. The momentum form survives in
+rocket dynamics (variable mass) and in special relativity (<span
+class="math inline"><strong>p</strong> = <em>γ</em><em>m</em><strong>v</strong></span>).</p>
+<p><strong>Follow-up Q2.1a:</strong> Where does <span
+class="math inline"><strong>F</strong> = <em>m</em><strong>a</strong></span>
+fail?</p>
+<blockquote>
+<p>Rockets — the dm/dt term gives the thrust force <span
+class="math inline"><em>u</em><sub>rel</sub> |<em>d</em><em>m</em>/<em>d</em><em>t</em>|</span>
+that produces <span
+class="math inline"><em>Δ</em><em>v</em> = <em>u</em><sub>rel</sub>ln (<em>m</em><sub>0</sub>/<em>m</em><sub><em>f</em></sub>)</span>,
+Tsiolkovsky’s equation. Also relativistic mechanics: <span
+class="math inline"><strong>F</strong></span> and <span
+class="math inline"><strong>a</strong></span> are not parallel in
+general.</p>
+</blockquote>
+<p><strong>Follow-up Q2.1b:</strong> When does Newton’s third law
+fail?</p>
+<blockquote>
+<p>Magnetic forces between two moving charges are not generally equal
+and opposite at the same instant. The “missing” momentum is carried by
+the electromagnetic field — total matter <span
+class="math inline">+</span> field momentum is still conserved.</p>
+</blockquote>
+<p><strong>⭐⭐ Q2.2: Define an inertial frame.</strong></p>
+<p><em>Model answer:</em> A reference frame in which a free particle (no
+forces acting on it) moves in a straight line at constant velocity —
+i.e., where Newton’s first law holds. Inertial frames are related to
+each other by <strong>Galilean transformations</strong> (in Newtonian
+mechanics) or <strong>Lorentz transformations</strong> (in special
+relativity).</p>
+<p><strong>Follow-up Q2.2a:</strong> Are Newton’s laws
+Lorentz-invariant?</p>
+<blockquote>
+<p>No. Newton’s laws are Galilean-invariant. Lorentz invariance requires
+reformulation: <span
+class="math inline"><strong>F</strong> = <em>d</em><strong>p</strong>/<em>d</em><em>t</em></span>
+with relativistic <span
+class="math inline"><strong>p</strong> = <em>γ</em><em>m</em><strong>v</strong></span>,
+plus the full four-vector formalism. This was Einstein’s motivation in
+1905.</p>
+</blockquote>
+<p><strong>⭐⭐ Q2.3: What are pseudo-forces? Are they
+“real”?</strong></p>
+<p><em>Model answer:</em> Pseudo-forces (centrifugal, Coriolis, Euler)
+appear in <strong>non-inertial frames</strong> and vanish in inertial
+frames. They are mathematically real (they affect equations of motion in
+that frame) but disappear under a change of frame. Their deepest
+extension: <strong>Einstein’s equivalence principle</strong> — even
+<strong>gravity</strong> is locally a pseudo-force, eliminable in a
+free-fall frame. This is the foundation of general relativity.</p>
+<p><strong>Examiner note (Heisenberg):</strong> ⭐⭐⭐ This
+equivalence-principle connection is gold for Heisenberg. Always close
+the pseudo-force question with “…which is why Einstein concluded gravity
+is geometry, not a force.”</p>
+</section>
+</section>
+<section id="chapter-3-groups-einschub-gruppen" class="level1">
+<h1>Chapter 3 — Groups (<em>Einschub: Gruppen</em>)</h1>
+<section id="what-this-chapter-covers-2" class="level2">
+<h2>What this chapter covers</h2>
+<ul>
+<li>Definition of a group</li>
+<li>Representations of groups</li>
+<li>The Galilei group as a concrete example</li>
+</ul>
+</section>
+<section id="subject-knowledge-expected-2" class="level2">
+<h2>Subject knowledge expected</h2>
+<ul>
+<li>The four group axioms (closure, associativity, identity,
+inverse)</li>
+<li>Difference between discrete and continuous (Lie) groups</li>
+<li>What a representation is — a way of “realizing” the group as
+matrices acting on a space</li>
+<li>Galilean group: rotations, boosts, translations in space and
+time</li>
+</ul>
+</section>
+<section id="likely-questions-2" class="level2">
+<h2>Likely questions</h2>
+<p><strong>⭐⭐ Q3.1: What is a group? Why do we care in
+physics?</strong></p>
+<p><em>Model answer:</em> A <strong>group</strong> <span
+class="math inline"><em>G</em></span> is a set with an operation <span
+class="math inline">⋅</span> satisfying: (i) closure (<span
+class="math inline"><em>g</em><sub>1</sub> ⋅ <em>g</em><sub>2</sub> ∈ <em>G</em></span>),
+(ii) associativity, (iii) identity element exists, (iv) inverses exist.
+We care because <strong>groups encode symmetries</strong>, and
+symmetries (by Noether’s theorem) give conservation laws and structural
+constraints on physical theories.</p>
+<p><strong>Follow-up Q3.1a:</strong> What’s a Lie group?</p>
+<blockquote>
+<p>A group whose elements form a <strong>continuous, differentiable
+manifold</strong> — you can parametrize transformations continuously
+(e.g., rotation angle). All transformations arise as <span
+class="math inline"><em>G</em> = exp (<em>T</em>)</span> from generators
+<span class="math inline"><em>T</em></span> in the corresponding
+<strong>Lie algebra</strong>.</p>
+</blockquote>
+<p><strong>Follow-up Q3.1b:</strong> Give physical examples of important
+groups.</p>
+<blockquote>
+<p><span class="math inline">SO(3)</span> rotations of 3D space; <span
+class="math inline">SO(3,1)</span> Lorentz group; <span
+class="math inline">SU(2)</span> (covers spin-<span
+class="math inline">$\tfrac12$</span> rotations and the double cover of
+<span class="math inline">SO(3)</span>); <span
+class="math inline">U(1)</span> for electromagnetism; the Galilean
+group; the Poincaré group; <span
+class="math inline">SU(3) × SU(2) × U(1)</span> of the Standard
+Model.</p>
+</blockquote>
+<p><strong>⭐⭐⭐ Q3.2: Why are rotations described by a
+group?</strong></p>
+<p><em>Model answer:</em> Composition of two rotations is another
+rotation (closure); the identity is “no rotation”; every rotation has an
+inverse; composition is associative. So rotations satisfy all four group
+axioms. The rotation group is <span class="math inline">SO(3)</span>,
+three-dimensional, parametrized by three Euler angles (or
+axis-angle).</p>
+<p><strong>Follow-up Q3.2a:</strong> Compare <span
+class="math inline">SO(3)</span> and <span
+class="math inline">SU(2)</span>.</p>
+<blockquote>
+<p>Same Lie algebra (<span
+class="math inline">[<em>J</em><sub><em>i</em></sub>,<em>J</em><sub><em>j</em></sub>] = <em>i</em>ℏ<em>ϵ</em><sub><em>i</em><em>j</em><em>k</em></sub><em>J</em><sub><em>k</em></sub></span>),
+but <span class="math inline">SU(2)</span> is the <strong>double
+cover</strong> of <span class="math inline">SO(3)</span>. Two elements
+of <span class="math inline">SU(2)</span> (e.g., <span
+class="math inline"><em>U</em></span> and <span
+class="math inline"> − <em>U</em></span>) correspond to the same
+rotation. Spinors live in <span class="math inline">SU(2)</span> and
+pick up a minus sign under <span class="math inline">2<em>π</em></span>
+rotation; you need <span class="math inline">4<em>π</em></span> to
+return to identity. This is measurable (neutron interferometry).</p>
+</blockquote>
+<p><strong>⭐⭐ Q3.3: What is a representation of a group?</strong></p>
+<p><em>Model answer:</em> A homomorphism <span
+class="math inline"><em>R</em> : <em>G</em> → GL(<em>V</em>)</span> —
+i.e., a mapping of group elements to invertible linear operators on a
+vector space, preserving multiplication: <span
+class="math inline"><em>R</em>(<em>g</em><sub>1</sub><em>g</em><sub>2</sub>) = <em>R</em>(<em>g</em><sub>1</sub>)<em>R</em>(<em>g</em><sub>2</sub>)</span>.
+Different representations describe different physical quantities:
+scalars (trivial rep), vectors (fundamental rep), tensors, spinors.
+<strong>Spin 0, 1/2, 1, etc. of elementary particles correspond to
+different representations of the Lorentz group.</strong></p>
+<p><strong>Examiner note (Eichhorn):</strong> ⭐⭐⭐ Eichhorn’s Chapter
+2 of her QFT notes is literally devoted to this. She’ll likely ask about
+representations directly or via the question “Why do we label particles
+by mass and spin?”</p>
+</section>
+</section>
+<section id="chapter-4-classical-mechanics-2-analytical-mechanics"
+class="level1">
+<h1>Chapter 4 — Classical Mechanics 2: Analytical Mechanics</h1>
+<section id="what-this-chapter-covers-3" class="level2">
+<h2>What this chapter covers</h2>
+<ul>
+<li>Noether’s theorems</li>
+<li>Constraints (holonomic vs. non-holonomic)</li>
+<li>Extremal principles: action, Euler-Lagrange equation</li>
+</ul>
+</section>
+<section id="subject-knowledge-expected-3" class="level2">
+<h2>Subject knowledge expected</h2>
+<ul>
+<li>Statement and derivation of Noether’s theorem</li>
+<li>The three classic applications: time translation <span
+class="math inline">→</span> energy, space translation <span
+class="math inline">→</span> momentum, rotation <span
+class="math inline">→</span> angular momentum</li>
+<li>Holonomic vs. non-holonomic constraints; examples of each</li>
+<li>Principle of stationary action; Euler-Lagrange derivation</li>
+<li>Lagrangian for a free particle, a particle in a potential, a
+pendulum</li>
+</ul>
+</section>
+<section id="likely-questions-3" class="level2">
+<h2>Likely questions</h2>
+<p><strong>⭐⭐⭐ Q4.1: State the principle of stationary
+action.</strong></p>
+<p><em>Model answer:</em> The action <span
+class="math inline"><em>S</em> = ∫<em>L</em> <em>d</em><em>t</em></span>
+where <span
+class="math inline"><em>L</em> = <em>T</em> − <em>V</em></span> is
+<strong>stationary</strong> (<span
+class="math inline"><em>δ</em><em>S</em> = 0</span>) along physical
+trajectories with fixed endpoints. This single principle gives equations
+of motion that generalize to field theory, relativity, and quantum
+mechanics. F <span class="math inline">=</span> ma doesn’t generalize;
+<span class="math inline"><em>δ</em><em>S</em> = 0</span> does.</p>
+<p><strong>Follow-up Q4.1a:</strong> Derive the Euler-Lagrange
+equation.</p>
+<blockquote>
+<p>Vary <span
+class="math inline"><em>q</em> → <em>q</em> + <em>δ</em><em>q</em></span>
+with <span class="math inline"><em>δ</em><em>q</em></span> vanishing at
+endpoints. <span class="math inline">$\delta S = \int
+\left[\dfrac{\partial L}{\partial q}\delta q + \dfrac{\partial
+L}{\partial \dot q}\delta\dot q\right] dt$</span>. Integrate the second
+term by parts; boundary terms vanish. <span class="math inline">$\delta
+S = \int \left[\dfrac{\partial L}{\partial q} -
+\dfrac{d}{dt}\dfrac{\partial L}{\partial \dot q}\right]\delta q\, dt =
+0$</span> for arbitrary <span
+class="math inline"><em>δ</em><em>q</em></span>. By the fundamental
+lemma of calculus of variations: <span
+class="math inline">$\boxed{\dfrac{d}{dt}\dfrac{\partial L}{\partial
+\dot q} - \dfrac{\partial L}{\partial q} = 0}$</span></p>
+</blockquote>
+<p><strong>Follow-up Q4.1b:</strong> Why is <span
+class="math inline"><em>δ</em><em>S</em> = 0</span> “natural”?</p>
+<blockquote>
+<p>Because in Feynman’s path-integral formulation of QM, the amplitude
+is <span
+class="math inline">∫𝒟<em>q</em> <em>e</em><sup><em>i</em><em>S</em>/ℏ</sup></span>.
+All paths contribute, but only those near <span
+class="math inline"><em>δ</em><em>S</em> = 0</span> interfere
+constructively in the classical limit <span
+class="math inline">ℏ → 0</span>. The classical action principle emerges
+from QM.</p>
+</blockquote>
+<p><strong>⭐⭐⭐ Q4.2: State Noether’s theorem.</strong></p>
+<p><em>Model answer:</em> <strong>Every continuous symmetry of the
+action implies a conserved quantity.</strong> If <span
+class="math inline"><em>S</em></span> is invariant under <span
+class="math inline"><em>q</em> → <em>q</em> + <em>ϵ</em> <em>δ</em><em>q</em></span>,
+then <span class="math inline">$Q = \dfrac{\partial L}{\partial\dot
+q}\,\delta q$</span> is conserved: <span
+class="math inline"><em>d</em><em>Q</em>/<em>d</em><em>t</em> = 0</span>.</p>
+<p><strong>Follow-up Q4.2a:</strong> How does time-translation symmetry
+give energy conservation?</p>
+<blockquote>
+<p>If <span class="math inline"><em>L</em></span> doesn’t depend
+explicitly on <span class="math inline"><em>t</em></span>, the
+corresponding conserved quantity is the <strong>Hamiltonian</strong>
+<span
+class="math inline"><em>H</em> = <em>p</em><em>q̇</em> − <em>L</em></span>.
+For standard kinetic energies (quadratic in <span
+class="math inline"><em>q̇</em></span>) and velocity-independent
+potentials, <span
+class="math inline"><em>H</em> = <em>T</em> + <em>V</em> = <em>E</em></span>.
+So time-translation invariance <span class="math inline">⇔</span> energy
+conservation.</p>
+</blockquote>
+<p><strong>Follow-up Q4.2b:</strong> Where does energy conservation
+fail?</p>
+<blockquote>
+<p>In <strong>cosmology</strong>. The expanding universe breaks
+time-translation symmetry — the universe at time <span
+class="math inline"><em>t</em></span> differs from time <span
+class="math inline"><em>t</em>′</span>. By Noether: no symmetry, no
+conservation. Photons redshift, losing energy with no compensating gain.
+This is not a flaw but a <em>consequence</em> of Noether’s theorem
+working correctly.</p>
+</blockquote>
+<p><strong>Follow-up Q4.2c:</strong> What conserved quantity comes from
+spatial translation? Rotation?</p>
+<blockquote>
+<p>Spatial translation <span class="math inline">→</span>
+<strong>momentum</strong> <span
+class="math inline"><strong>p</strong></span>. Rotation about an axis
+<span class="math inline">→</span> component of <strong>angular
+momentum</strong> along that axis.</p>
+</blockquote>
+<p><strong>Examiner note (Eichhorn):</strong> ⭐⭐⭐ Eichhorn led an
+<strong>Emmy Noether Group</strong>. Noether’s theorem is <em>the</em>
+most likely topic. Know all three applications cold and be able to
+derive the theorem itself.</p>
+<p><strong>⭐⭐ Q4.3: Distinguish holonomic and non-holonomic
+constraints.</strong></p>
+<p><em>Model answer:</em> <strong>Holonomic</strong> constraints can be
+written as <span
+class="math inline"><em>f</em>(<em>q</em>,<em>t</em>) = 0</span> — they
+reduce the number of independent coordinates. Bead on a wire: the wire
+is the constraint, one coordinate suffices.
+<strong>Non-holonomic</strong> constraints involve velocities and
+<em>cannot</em> be integrated to a coordinate relation. Rolling ball on
+a plane: the rolling condition relates linear and angular velocity, but
+the final orientation depends on the <em>path</em>, not just
+endpoints.</p>
+</section>
+</section>
+<section id="chapter-5-special-relativity-spezielle-relativitätstheorie"
+class="level1">
+<h1>Chapter 5 — Special Relativity (<em>Spezielle
+Relativitätstheorie</em>)</h1>
+<section id="what-this-chapter-covers-4" class="level2">
+<h2>What this chapter covers</h2>
+<ul>
+<li>Speed of light as universal constant</li>
+<li>From Galilei to Poincaré symmetry</li>
+<li>The light cone and Minkowski causal structure</li>
+<li>Consequences: time dilation, length contraction, Lorentz
+transformations</li>
+</ul>
+</section>
+<section id="subject-knowledge-expected-4" class="level2">
+<h2>Subject knowledge expected</h2>
+<ul>
+<li>The two postulates of SR</li>
+<li>Lorentz transformations</li>
+<li>Time dilation, length contraction, relativity of simultaneity</li>
+<li>Four-vectors and the spacetime interval <span
+class="math inline"><em>d</em><em>s</em><sup>2</sup></span></li>
+<li>Energy-momentum relation <span
+class="math inline"><em>E</em><sup>2</sup> = (<em>p</em><em>c</em>)<sup>2</sup> + (<em>m</em><em>c</em><sup>2</sup>)<sup>2</sup></span></li>
+<li>Minkowski metric <span
+class="math inline"><em>η</em><sup><em>μ</em><em>ν</em></sup></span></li>
+</ul>
+</section>
+<section id="likely-questions-4" class="level2">
+<h2>Likely questions</h2>
+<p><strong>⭐⭐⭐ Q5.1: State the two postulates of special
+relativity.</strong></p>
+<p><em>Model answer:</em></p>
+<ol type="1">
+<li><strong>Principle of relativity:</strong> Laws of physics are the
+same in all inertial frames.</li>
+<li><strong>Constancy of the speed of light:</strong> <span
+class="math inline"><em>c</em></span> is the same in every inertial
+frame, independent of the motion of source or observer.</li>
+</ol>
+<p><strong>Follow-up Q5.1a:</strong> Why is the second postulate
+revolutionary?</p>
+<blockquote>
+<p>Because it contradicts Galilean velocity addition. In Galilean
+mechanics, if you chase a light beam, you’d see it move slower.
+Experimentally (Michelson-Morley 1887) the speed of light is the same.
+This forces a revision of how we relate frames — Lorentz transformations
+instead of Galilean.</p>
+</blockquote>
+<p><strong>⭐⭐⭐ Q5.2: Derive time dilation.</strong></p>
+<p><em>Model answer:</em> <strong>Light clock argument.</strong> Two
+mirrors separated by <span class="math inline"><em>L</em></span>; a
+photon bounces. In the rest frame, period <span
+class="math inline"><em>T</em><sub>0</sub> = 2<em>L</em>/<em>c</em></span>.
+In a lab frame where the clock moves with velocity <span
+class="math inline"><em>v</em></span> perpendicular to the mirror axis,
+the photon travels a diagonal of length <span
+class="math inline">$\sqrt{L^2 + (vT/2)^2}$</span> per half-period.
+Total path <span class="math inline"> = <em>c</em><em>T</em></span>, so
+<span class="math inline">$2\sqrt{L^2 + (vT/2)^2} = cT$</span>, giving
+<span class="math inline">$T = T_0/\sqrt{1 - v^2/c^2} = \gamma
+T_0$</span>. <strong>A moving clock runs slow by factor <span
+class="math inline"><em>γ</em></span>.</strong></p>
+<p><strong>Follow-up Q5.2a:</strong> What’s length contraction?</p>
+<blockquote>
+<p>A moving rod of rest length <span
+class="math inline"><em>L</em><sub>0</sub></span> has lab-frame length
+<span
+class="math inline"><em>L</em> = <em>L</em><sub>0</sub>/<em>γ</em></span>
+along its direction of motion. Transverse dimensions unchanged.
+Derivable from time dilation plus the constancy of <span
+class="math inline"><em>c</em></span>.</p>
+</blockquote>
+<p><strong>Follow-up Q5.2b:</strong> How do velocities add
+relativistically?</p>
+<blockquote>
+<p><span class="math inline">$u' = \dfrac{u - v}{1 - uv/c^2}$</span>. If
+<span class="math inline"><em>u</em> = <em>c</em></span>, then <span
+class="math inline"><em>u</em>′ = <em>c</em></span> — speed of light is
+conserved under the transformation, as required by the second
+postulate.</p>
+</blockquote>
+<p><strong>⭐⭐⭐ Q5.3: Write Lorentz transformations for a boost along
+x.</strong></p>
+<p><em>Model answer:</em> <span
+class="math display"><em>x</em>′ = <em>γ</em>(<em>x</em>−<em>v</em><em>t</em>),  <em>t</em>′ = <em>γ</em>(<em>t</em>−<em>v</em><em>x</em>/<em>c</em><sup>2</sup>),  <em>y</em>′ = <em>y</em>,  <em>z</em>′ = <em>z</em></span>
+with <span class="math inline">$\gamma = 1/\sqrt{1 - v^2/c^2}$</span>.
+These preserve the <strong>spacetime interval</strong> <span
+class="math inline"><em>d</em><em>s</em><sup>2</sup> = <em>c</em><sup>2</sup><em>d</em><em>t</em><sup>2</sup> − <em>d</em><em>x</em><sup>2</sup> − <em>d</em><em>y</em><sup>2</sup> − <em>d</em><em>z</em><sup>2</sup></span>,
+which is the analog of Euclidean distance in Minkowski space.</p>
+<p><strong>Follow-up Q5.3a:</strong> Define a four-vector.</p>
+<blockquote>
+<p>An object <span
+class="math inline"><em>x</em><sup><em>μ</em></sup> = (<em>c</em><em>t</em>,<em>x</em>,<em>y</em>,<em>z</em>)</span>
+that transforms under Lorentz transformations as <span
+class="math inline"><em>x</em>′<sup><em>μ</em></sup> = <em>Λ</em><sub> <em>ν</em></sub><sup><em>μ</em></sup><em>x</em><sup><em>ν</em></sup></span>
+and whose inner product with itself <span
+class="math inline"><em>x</em><sup><em>μ</em></sup><em>x</em><sub><em>μ</em></sub> = <em>η</em><sub><em>μ</em><em>ν</em></sub><em>x</em><sup><em>μ</em></sup><em>x</em><sup><em>ν</em></sup></span>
+is Lorentz-invariant. Other examples: four-momentum <span
+class="math inline"><em>p</em><sup><em>μ</em></sup> = (<em>E</em>/<em>c</em>,<strong>p</strong>)</span>,
+four-velocity, four-current.</p>
+</blockquote>
+<p><strong>Follow-up Q5.3b:</strong> What is <span
+class="math inline"><em>p</em><sup><em>μ</em></sup><em>p</em><sub><em>μ</em></sub></span>?</p>
+<blockquote>
+<p><span
+class="math inline"><em>p</em><sup><em>μ</em></sup><em>p</em><sub><em>μ</em></sub> = <em>E</em><sup>2</sup>/<em>c</em><sup>2</sup> − <strong>p</strong><sup>2</sup> = <em>m</em><sup>2</sup><em>c</em><sup>2</sup></span>.
+This gives the famous relation <span
+class="math inline"><em>E</em><sup>2</sup> = (<em>p</em><em>c</em>)<sup>2</sup> + (<em>m</em><em>c</em><sup>2</sup>)<sup>2</sup></span>.
+For massless particles (<span
+class="math inline"><em>m</em> = 0</span>): <span
+class="math inline"><em>E</em> = <em>p</em><em>c</em></span>.</p>
+</blockquote>
+<p><strong>⭐⭐ Q5.4: What is the Lorentz group? Why <span
+class="math inline">SO(3,1)</span>?</strong></p>
+<p><em>Model answer:</em> The group of transformations preserving the
+Minkowski metric <span
+class="math inline"><em>η</em><sup><em>μ</em><em>ν</em></sup> = diag(+1,−1,−1,−1)</span>.
+It’s <span class="math inline">SO(3,1)</span> because the metric has
+signature <span class="math inline">(3,1)</span> — three spatial
+dimensions (minus signs) and one time dimension (plus sign). Not <span
+class="math inline">SO(4)</span> (Euclidean 4D) — Minkowski geometry is
+different. Generators: 3 rotations + 3 boosts = 6 generators total.</p>
+<p><strong>Examiner note (Heisenberg):</strong> ⭐⭐⭐ Heisenberg works
+in GR — covariant formalism is her language. Be fluent with index
+notation, metric, four-vectors.</p>
+<p><strong>Examiner note (Eichhorn):</strong> ⭐⭐⭐ Eichhorn’s QFT
+notes Chapter 2 derives the Lorentz group structure, then uses it to
+classify all possible particle representations (scalar, spinor, vector).
+This is <em>exactly</em> her favorite topic.</p>
+</section>
+</section>
+<section id="chapter-6-electrodynamics-elektrodynamik" class="level1">
+<h1>Chapter 6 — Electrodynamics (<em>Elektrodynamik</em>)</h1>
+<section id="what-this-chapter-covers-5" class="level2">
+<h2>What this chapter covers</h2>
+<ul>
+<li>The electromagnetic field tensor <span
+class="math inline"><em>F</em><sup><em>μ</em><em>ν</em></sup></span></li>
+<li>Action of electrodynamics (<span class="math inline">$\mathcal{L} =
+-\tfrac14 F_{\mu\nu}F^{\mu\nu}$</span>)</li>
+<li>Maxwell’s equations from variational principle</li>
+<li>Consequences: wave solutions, gauge invariance</li>
+</ul>
+</section>
+<section id="subject-knowledge-expected-5" class="level2">
+<h2>Subject knowledge expected</h2>
+<ul>
+<li>Maxwell’s equations in vector form and covariant form</li>
+<li>Why the displacement current is needed</li>
+<li>Lagrangian density of EM</li>
+<li>How <span class="math inline"><strong>E</strong></span> and <span
+class="math inline"><strong>B</strong></span> are encoded in <span
+class="math inline"><em>F</em><sup><em>μ</em><em>ν</em></sup></span></li>
+<li>Gauge invariance <span
+class="math inline"><em>A</em><sub><em>μ</em></sub> → <em>A</em><sub><em>μ</em></sub> + ∂<sub><em>μ</em></sub><em>χ</em></span></li>
+</ul>
+</section>
+<section id="likely-questions-5" class="level2">
+<h2>Likely questions</h2>
+<p><strong>⭐⭐⭐ Q6.1: Write Maxwell’s equations.</strong></p>
+<p><em>Model answer</em> (SI): <span
+class="math display">∇ ⋅ <strong>E</strong> = <em>ρ</em>/<em>ϵ</em><sub>0</sub>,  ∇ ⋅ <strong>B</strong> = 0,  ∇ × <strong>E</strong> =  − ∂<sub><em>t</em></sub><strong>B</strong>,  ∇ × <strong>B</strong> = <em>μ</em><sub>0</sub><strong>J</strong> + <em>μ</em><sub>0</sub><em>ϵ</em><sub>0</sub> ∂<sub><em>t</em></sub><strong>E</strong></span>
+Gauss (charges source E), no monopoles, Faraday (changing B induces E),
+Ampère-Maxwell (currents and changing E induce B).</p>
+<p><strong>Follow-up Q6.1a:</strong> Why is the displacement current
+needed?</p>
+<blockquote>
+<p>Without <span
+class="math inline"><em>μ</em><sub>0</sub><em>ϵ</em><sub>0</sub> ∂<sub><em>t</em></sub><strong>E</strong></span>,
+<span
+class="math inline">∇ ⋅ (∇×<strong>B</strong>) = <em>μ</em><sub>0</sub>∇ ⋅ <strong>J</strong></span>,
+which must equal zero — but continuity says <span
+class="math inline">∇ ⋅ <strong>J</strong> =  − ∂<em>ρ</em>/∂<em>t</em> ≠ 0</span>
+in general. Adding <span
+class="math inline"><em>μ</em><sub>0</sub><em>ϵ</em><sub>0</sub> ∂<sub><em>t</em></sub><strong>E</strong></span>
+makes it consistent <strong>and</strong> predicts EM waves traveling at
+<span class="math inline">$c = 1/\sqrt{\mu_0\epsilon_0}$</span> —
+Maxwell’s spectacular prediction.</p>
+</blockquote>
+<p><strong>⭐⭐⭐ Q6.2: Write Maxwell’s equations in covariant
+form.</strong></p>
+<p><em>Model answer:</em> <span
+class="math display">∂<sub><em>μ</em></sub><em>F</em><sup><em>μ</em><em>ν</em></sup> = <em>μ</em><sub>0</sub><em>J</em><sup><em>ν</em></sup>  (inhomogeneous:
+Gauss + Ampère-Maxwell)</span> <span
+class="math display">∂<sub><em>μ</em></sub><em>F̃</em><sup><em>μ</em><em>ν</em></sup> = 0  (homogeneous:
+no monopole + Faraday)</span> where <span
+class="math inline"><em>F</em><sup><em>μ</em><em>ν</em></sup></span> is
+the antisymmetric field tensor with <span
+class="math inline"><em>F</em><sup>0<em>i</em></sup> =  − <em>E</em><sup><em>i</em></sup>/<em>c</em></span>,
+<span
+class="math inline"><em>F</em><sup><em>i</em><em>j</em></sup> =  − <em>ϵ</em><sup><em>i</em><em>j</em><em>k</em></sup><em>B</em><sub><em>k</em></sub></span>,
+and <span
+class="math inline"><em>J</em><sup><em>μ</em></sup> = (<em>c</em><em>ρ</em>,<strong>J</strong>)</span>
+is the four-current. The four-potential is <span
+class="math inline"><em>A</em><sup><em>μ</em></sup> = (<em>φ</em>/<em>c</em>,<strong>A</strong>)</span>,
+and <span
+class="math inline"><em>F</em><sub><em>μ</em><em>ν</em></sub> = ∂<sub><em>μ</em></sub><em>A</em><sub><em>ν</em></sub> − ∂<sub><em>ν</em></sub><em>A</em><sub><em>μ</em></sub></span>.</p>
+<p><strong>⭐⭐⭐ Q6.3: Write the Lagrangian density of
+electrodynamics.</strong></p>
+<p><em>Model answer:</em> For free EM field: <span
+class="math inline">$\mathcal{L} = -\tfrac14
+F_{\mu\nu}F^{\mu\nu}$</span>. With matter coupling: <span
+class="math inline">$\mathcal{L} = -\tfrac14 F_{\mu\nu}F^{\mu\nu} -
+A_\mu J^\mu$</span>. The Euler-Lagrange equation <span
+class="math inline">∂<sub><em>μ</em></sub>(∂ℒ/∂(∂<sub><em>μ</em></sub><em>A</em><sub><em>ν</em></sub>)) − ∂ℒ/∂<em>A</em><sub><em>ν</em></sub> = 0</span>
+gives back Maxwell’s equations <span
+class="math inline">∂<sub><em>μ</em></sub><em>F</em><sup><em>μ</em><em>ν</em></sup> = <em>J</em><sup><em>ν</em></sup></span>.
+The homogeneous equations follow automatically from <span
+class="math inline"><em>F</em> = <em>d</em><em>A</em></span> (Bianchi
+identity).</p>
+<p><strong>Follow-up Q6.3a:</strong> Why this combination <span
+class="math inline"><em>F</em><sub><em>μ</em><em>ν</em></sub><em>F</em><sup><em>μ</em><em>ν</em></sup></span>?</p>
+<blockquote>
+<p>Three reasons: (1) Lorentz invariant (tensor contracted with itself).
+(2) Gauge invariant (<span class="math inline"><em>F</em></span> is
+unchanged under <span
+class="math inline"><em>A</em><sub><em>μ</em></sub> → <em>A</em><sub><em>μ</em></sub> + ∂<sub><em>μ</em></sub><em>χ</em></span>).
+(3) Lowest-order kinetic term with two derivatives, avoiding
+Ostrogradsky instabilities from higher derivatives.</p>
+</blockquote>
+<p><strong>⭐⭐⭐ Q6.4: What is gauge invariance?</strong></p>
+<p><em>Model answer:</em> The transformation <span
+class="math inline"><em>A</em><sub><em>μ</em></sub> → <em>A</em><sub><em>μ</em></sub> + ∂<sub><em>μ</em></sub><em>χ</em></span>
+leaves all observable quantities (<span
+class="math inline"><strong>E</strong></span>, <span
+class="math inline"><strong>B</strong></span>, and <span
+class="math inline"><em>F</em><sub><em>μ</em><em>ν</em></sub></span>)
+unchanged, so it’s an exact symmetry of the theory. The vector potential
+<span class="math inline"><em>A</em><sub><em>μ</em></sub></span> is
+“redundant”; physical quantities are gauge-invariant.</p>
+<p><strong>Follow-up Q6.4a:</strong> Why does gauge invariance require
+charge conservation?</p>
+<blockquote>
+<p>The interaction term <span
+class="math inline"><em>A</em><sub><em>μ</em></sub><em>J</em><sup><em>μ</em></sup></span>
+is not gauge invariant by itself — under <span
+class="math inline"><em>A</em><sub><em>μ</em></sub> → <em>A</em><sub><em>μ</em></sub> + ∂<sub><em>μ</em></sub><em>χ</em></span>,
+it picks up <span
+class="math inline">∂<sub><em>μ</em></sub><em>χ</em><em>J</em><sup><em>μ</em></sup></span>.
+Integration by parts gives <span
+class="math inline"> − <em>χ</em> ∂<sub><em>μ</em></sub><em>J</em><sup><em>μ</em></sup></span>.
+For the action to be gauge-invariant for arbitrary <span
+class="math inline"><em>χ</em></span>, we need <span
+class="math inline">∂<sub><em>μ</em></sub><em>J</em><sup><em>μ</em></sup> = 0</span>
+— <strong>charge conservation</strong>. So gauge symmetry <span
+class="math inline">⇒</span> charge conservation. (This is Noether’s
+theorem for local symmetries.)</p>
+</blockquote>
+<p><strong>Examiner note:</strong> ⭐⭐⭐ Both examiners care deeply.
+Eichhorn’s QFT course derives U(1) gauge symmetry as the origin of
+electromagnetism. Heisenberg notes the analog “diffeomorphism
+invariance” in GR plays the same role.</p>
+</section>
+</section>
+<section id="chapter-7-quantum-mechanics-1-foundations" class="level1">
+<h1>Chapter 7 — Quantum Mechanics 1 (Foundations)</h1>
+<section id="what-this-chapter-covers-6" class="level2">
+<h2>What this chapter covers</h2>
+<ul>
+<li>Reasons for a new mechanics (photoelectric effect, blackbody, atomic
+spectra)</li>
+<li>Wave-particle duality</li>
+<li>Quantum mechanical states</li>
+</ul>
+</section>
+<section id="subject-knowledge-expected-6" class="level2">
+<h2>Subject knowledge expected</h2>
+<ul>
+<li>Failures of classical physics that motivated QM</li>
+<li>de Broglie hypothesis: <span
+class="math inline"><em>λ</em> = <em>h</em>/<em>p</em></span></li>
+<li>Wave functions and probability interpretation <span
+class="math inline">|<em>ψ</em>|<sup>2</sup></span></li>
+<li>Superposition principle</li>
+</ul>
+</section>
+<section id="likely-questions-6" class="level2">
+<h2>Likely questions</h2>
+<p><strong>⭐⭐ Q7.1: Why do we need quantum mechanics?</strong></p>
+<p><em>Model answer:</em> Classical physics fails for atoms and
+radiation:</p>
+<ul>
+<li><strong>Blackbody radiation</strong>: classical equipartition gives
+the Rayleigh-Jeans law and the UV catastrophe. <strong>Planck</strong>
+resolved it by quantizing energy <span
+class="math inline"><em>E</em> = <em>h</em><em>ν</em></span>.</li>
+<li><strong>Photoelectric effect</strong>: light’s particle nature
+(<strong>Einstein 1905</strong>) — photons of energy <span
+class="math inline"><em>h</em><em>ν</em></span>.</li>
+<li><strong>Atomic stability</strong>: classical EM predicts an electron
+orbiting a nucleus radiates energy and spirals in within <span
+class="math inline"> ∼ 10<sup>−11</sup> s</span>. Real atoms are stable
+— Bohr (1913) postulated quantized orbits.</li>
+<li><strong>Atomic spectra</strong>: discrete lines, not a continuum —
+explained by quantized energy levels.</li>
+</ul>
+<p><strong>Follow-up Q7.1a:</strong> What is the de Broglie
+hypothesis?</p>
+<blockquote>
+<p>Every particle of momentum <span
+class="math inline"><em>p</em></span> has an associated wavelength <span
+class="math inline"><em>λ</em> = <em>h</em>/<em>p</em></span>. Confirmed
+for electrons by the <strong>Davisson-Germer experiment</strong> (1927)
+— electron diffraction off a nickel crystal.</p>
+</blockquote>
+<p><strong>⭐⭐ Q7.2: What is the meaning of the
+wavefunction?</strong></p>
+<p><em>Model answer:</em> <span
+class="math inline">|<em>ψ</em>(<em>x</em>,<em>t</em>)|<sup>2</sup></span>
+is the <strong>probability density</strong> of finding the particle at
+position <span class="math inline"><em>x</em></span> at time <span
+class="math inline"><em>t</em></span> (Born rule). The wavefunction
+itself is complex; only <span
+class="math inline">|<em>ψ</em>|<sup>2</sup></span> is observable.
+Normalization: <span
+class="math inline">∫|<em>ψ</em>|<sup>2</sup> <em>d</em><em>x</em> = 1</span>.</p>
+<p><strong>Follow-up Q7.2a:</strong> What’s the probability current?</p>
+<blockquote>
+<p><span class="math inline">$\mathbf{J} =
+\dfrac{\hbar}{2mi}(\psi^*\nabla\psi - \psi\nabla\psi^*) =
+\dfrac{\hbar}{m}\mathrm{Im}(\psi^*\nabla\psi)$</span>. Combined with
+<span class="math inline"><em>ρ</em> = |<em>ψ</em>|<sup>2</sup></span>,
+satisfies a <strong>continuity equation</strong> <span
+class="math inline">∂<em>ρ</em>/∂<em>t</em> + ∇ ⋅ <strong>J</strong> = 0</span>
+— probability is locally conserved.</p>
+</blockquote>
+<p><strong>⭐ Q7.3: How does the Bohr model fall short of quantum
+mechanics?</strong></p>
+<p><em>Model answer:</em> Bohr’s model <strong>postulates</strong>
+quantized angular momentum (<span
+class="math inline"><em>L</em> = <em>n</em>ℏ</span>) ad hoc. It gives
+correct H spectrum but:</p>
+<ul>
+<li>Cannot explain why other quantum numbers exist (<span
+class="math inline"><em>l</em></span>, <span
+class="math inline"><em>m</em></span>, <span
+class="math inline"><em>s</em></span>).</li>
+<li>Cannot handle multi-electron atoms.</li>
+<li>Doesn’t predict spectral line intensities or selection rules.</li>
+<li>Has no consistent treatment of spin.</li>
+</ul>
+<p>QM <strong>derives</strong> quantization from solving the Schrödinger
+equation with appropriate boundary conditions. The energy quantization
+emerges, not assumed.</p>
+<p><strong>Follow-up Q7.3a:</strong> Why don’t electrons fall into the
+nucleus?</p>
+<blockquote>
+<p>In QM, the wavefunction must satisfy <span
+class="math inline"><em>ψ</em>(<em>r</em>→0)</span> regularity. For the
+hydrogen atom, the ground-state wavefunction is <span
+class="math inline"><em>ψ</em><sub>100</sub> ∝ <em>e</em><sup>−<em>r</em>/<em>a</em><sub>0</sub></sup></span>
+— finite at <span class="math inline"><em>r</em> = 0</span>, with most
+probability at <span
+class="math inline"><em>r</em> ∼ <em>a</em><sub>0</sub></span> (Bohr
+radius). Classically the electron would radiate and spiral in; quantum
+mechanically there is no orbit, just a probability cloud with a
+minimum-energy state.</p>
+</blockquote>
+<p><strong>Examiner note:</strong> The interview reference document
+showed this question explicitly: “Why do we not fall through the
+ground?” Answer: boundary conditions on the radial equation + Pauli
+exclusion.</p>
+</section>
+</section>
+<section id="chapter-8-operators-in-quantum-mechanics" class="level1">
+<h1>Chapter 8 — Operators in Quantum Mechanics</h1>
+<section id="what-this-chapter-covers-7" class="level2">
+<h2>What this chapter covers</h2>
+<ul>
+<li>Linear operators on Hilbert space</li>
+<li>Bases and representations</li>
+<li>Quantum-mechanical operators (position, momentum, Hamiltonian)</li>
+</ul>
+</section>
+<section id="subject-knowledge-expected-7" class="level2">
+<h2>Subject knowledge expected</h2>
+<ul>
+<li>What makes an operator linear</li>
+<li>Eigenvalues and eigenvectors</li>
+<li>Hermitian (self-adjoint) operators have real eigenvalues, orthogonal
+eigenvectors</li>
+<li>Position <span class="math inline"><em>x̂</em></span> and momentum
+<span
+class="math inline"><em>p̂</em> =  − <em>i</em>ℏ ∂<sub><em>x</em></sub></span>
+in position representation</li>
+<li>Canonical commutator <span
+class="math inline">[<em>x̂</em>,<em>p̂</em>] = <em>i</em>ℏ</span></li>
+</ul>
+</section>
+<section id="likely-questions-7" class="level2">
+<h2>Likely questions</h2>
+<p><strong>⭐⭐⭐ Q8.1: Why must physical observables be represented by
+Hermitian operators?</strong></p>
+<p><em>Model answer:</em> Two reasons:</p>
+<ol type="1">
+<li><strong>Real eigenvalues:</strong> measurements yield real numbers,
+so eigenvalues of the operator must be real. Hermitian operators are
+guaranteed to have real eigenvalues.</li>
+<li><strong>Orthogonal eigenvectors:</strong> different measurement
+outcomes must correspond to distinguishable (orthogonal) states.
+Eigenvectors of Hermitian operators with distinct eigenvalues are
+automatically orthogonal.</li>
+</ol>
+<p>The <strong>spectral theorem</strong> says every Hermitian operator
+can be diagonalized in an orthonormal basis.</p>
+<p><strong>⭐⭐⭐ Q8.2: Compute <span
+class="math inline">[<em>x̂</em>,<em>p̂</em>]</span>.</strong></p>
+<p><em>Model answer:</em> In position representation <span
+class="math inline"><em>p̂</em> =  − <em>i</em>ℏ <em>d</em>/<em>d</em><em>x</em></span>.
+Act on a test function <span
+class="math inline"><em>ψ</em>(<em>x</em>)</span>: <span
+class="math display">[<em>x̂</em>,<em>p̂</em>]<em>ψ</em> = <em>x̂</em><em>p̂</em><em>ψ</em> − <em>p̂</em><em>x̂</em><em>ψ</em> =  − <em>i</em>ℏ<em>x</em><em>ψ</em>′ − (−<em>i</em>ℏ)(<em>x</em><em>ψ</em>)′ =  − <em>i</em>ℏ<em>x</em><em>ψ</em>′ + <em>i</em>ℏ<em>ψ</em> + <em>i</em>ℏ<em>x</em><em>ψ</em>′ = <em>i</em>ℏ <em>ψ</em>.</span>
+Therefore <span class="math inline">$\boxed{[\hat x, \hat p] =
+i\hbar}$</span>.</p>
+<p><strong>Follow-up Q8.2a:</strong> Compute <span
+class="math inline">[<em>L̂</em><sub><em>x</em></sub>,<em>L̂</em><sub><em>y</em></sub>]</span>.</p>
+<blockquote>
+<p>Using <span
+class="math inline"><em>L̂</em><sub><em>i</em></sub> = <em>ϵ</em><sub><em>i</em><em>j</em><em>k</em></sub><em>x̂</em><sub><em>j</em></sub><em>p̂</em><sub><em>k</em></sub></span>
+and applying <span
+class="math inline">[<em>x̂</em><sub><em>j</em></sub>,<em>p̂</em><sub><em>k</em></sub>] = <em>i</em>ℏ<em>δ</em><sub><em>j</em><em>k</em></sub></span>
+gives <span
+class="math inline">[<em>L̂</em><sub><em>x</em></sub>,<em>L̂</em><sub><em>y</em></sub>] = <em>i</em>ℏ<em>L̂</em><sub><em>z</em></sub></span>.
+The angular momentum operators form the SO(3) Lie algebra times <span
+class="math inline"><em>i</em>ℏ</span> — <em>exact same structure as
+classical Poisson bracket <span
+class="math inline">{<em>L</em><sub><em>x</em></sub>, <em>L</em><sub><em>y</em></sub>} = <em>L</em><sub><em>z</em></sub></span></em>.</p>
+</blockquote>
+<p><strong>Follow-up Q8.2b:</strong> Why does this force
+infinite-dimensional Hilbert spaces?</p>
+<blockquote>
+<p>Trace of a commutator is zero: <span
+class="math inline">Tr([<em>A</em>,<em>B</em>]) = 0</span> for finite
+matrices. But <span
+class="math inline">Tr(<em>i</em>ℏ <strong>1</strong>) = <em>i</em>ℏ <em>n</em> ≠ 0</span>
+for any finite <span class="math inline"><em>n</em></span>.
+<strong>Contradiction.</strong> So <span
+class="math inline"><em>x̂</em></span> and <span
+class="math inline"><em>p̂</em></span> cannot be represented by
+finite-dimensional matrices — the Hilbert space is infinite-dimensional.
+(Stone-von Neumann theorem.)</p>
+</blockquote>
+<p><strong>Examiner note (Eichhorn):</strong> ⭐⭐⭐ This is exactly her
+territory. She’ll appreciate this depth.</p>
+<p><strong>⭐⭐ Q8.3: What is a basis in QM? Why useful?</strong></p>
+<p><em>Model answer:</em> An <strong>orthonormal basis</strong> <span
+class="math inline">{|<em>n</em>⟩}</span> satisfies <span
+class="math inline">⟨<em>m</em>|<em>n</em>⟩ = <em>δ</em><sub><em>m</em><em>n</em></sub></span>
+and <span
+class="math inline">∑<sub><em>n</em></sub>|<em>n</em>⟩⟨<em>n</em>| = <strong>1</strong></span>
+(completeness). Any state can be expanded: <span
+class="math inline">|<em>ψ</em>⟩=∑<sub><em>n</em></sub><em>c</em><sub><em>n</em></sub>|<em>n</em>⟩</span>
+with <span
+class="math inline"><em>c</em><sub><em>n</em></sub> = ⟨<em>n</em>|<em>ψ</em>⟩</span>.
+Choosing a basis of energy eigenstates makes time evolution trivial:
+<span
+class="math inline">|<em>ψ</em>(<em>t</em>)⟩=∑<sub><em>n</em></sub><em>c</em><sub><em>n</em></sub> <em>e</em><sup>−<em>i</em><em>E</em><sub><em>n</em></sub><em>t</em>/ℏ</sup>|<em>n</em>⟩</span>.
+Choosing position basis gives <span
+class="math inline"><em>ψ</em>(<em>x</em>) = ⟨<em>x</em>|<em>ψ</em>⟩</span>
+— the standard wavefunction.</p>
+</section>
+</section>
+<section id="chapter-9-quantum-mechanics-2-axioms-and-solutions"
+class="level1">
+<h1>Chapter 9 — Quantum Mechanics 2: Axioms and Solutions</h1>
+<section id="what-this-chapter-covers-8" class="level2">
+<h2>What this chapter covers</h2>
+<ul>
+<li>Axioms of QM and the Copenhagen interpretation</li>
+<li>Schrödinger’s cat, EPR paradox</li>
+<li>Equations of motion and simple solutions</li>
+<li>Hydrogen atom, harmonic oscillator (typical examples)</li>
+</ul>
+</section>
+<section id="subject-knowledge-expected-8" class="level2">
+<h2>Subject knowledge expected</h2>
+<ul>
+<li>The five postulates of QM</li>
+<li>Time-dependent and time-independent Schrödinger equation</li>
+<li>Spherical harmonics and angular momentum quantization</li>
+<li>Hydrogen atom solution: energy levels <span
+class="math inline"><em>E</em><sub><em>n</em></sub> =  − 13.6 eV/<em>n</em><sup>2</sup></span></li>
+<li>Harmonic oscillator: ladder operators, <span
+class="math inline"><em>E</em><sub><em>n</em></sub> = ℏ<em>ω</em>(<em>n</em>+1/2)</span></li>
+</ul>
+</section>
+<section id="likely-questions-8" class="level2">
+<h2>Likely questions</h2>
+<p><strong>⭐⭐⭐ Q9.1: State the postulates of quantum
+mechanics.</strong></p>
+<p><em>Model answer:</em></p>
+<ol type="1">
+<li><strong>State</strong>: A physical state is a unit vector <span
+class="math inline">|<em>ψ</em>⟩</span> in a complex Hilbert space.</li>
+<li><strong>Observables</strong>: Each observable is a Hermitian
+(self-adjoint) operator <span
+class="math inline"><em>Â</em></span>.</li>
+<li><strong>Measurement</strong>: Possible outcomes are eigenvalues
+<span class="math inline"><em>a</em><sub><em>n</em></sub></span> of
+<span class="math inline"><em>Â</em></span>. Probability of <span
+class="math inline"><em>a</em><sub><em>n</em></sub></span> is <span
+class="math inline">|⟨<em>n</em>|<em>ψ</em>⟩|<sup>2</sup></span> (Born
+rule). After measurement, the state collapses to <span
+class="math inline">|<em>n</em>⟩</span>.</li>
+<li><strong>Time evolution</strong>: <span
+class="math inline"><em>i</em>ℏ ∂<sub><em>t</em></sub>|<em>ψ</em>⟩=<em>Ĥ</em>|<em>ψ</em>⟩</span>
+(Schrödinger).</li>
+<li><strong>Composite systems</strong>: Hilbert space of a composite
+system is the tensor product of constituent Hilbert spaces.</li>
+</ol>
+<p><strong>Follow-up Q9.1a:</strong> Why must time evolution be
+unitary?</p>
+<blockquote>
+<p>Because <span class="math inline"><em>Ĥ</em></span> is Hermitian,
+<span
+class="math inline"><em>Û</em>(<em>t</em>) = <em>e</em><sup>−<em>i</em><em>Ĥ</em><em>t</em>/ℏ</sup></span>
+is unitary, so <span
+class="math inline"><em>Û</em><sup>†</sup><em>Û</em> = <strong>1</strong></span>.
+Unitary evolution preserves inner products (<span
+class="math inline">⟨<em>ψ</em>|<em>ϕ</em>⟩</span> stays constant), so
+probability is conserved. <strong>Classical analog: Liouville’s
+theorem</strong> (phase-space volume preservation).</p>
+</blockquote>
+<p><strong>⭐⭐⭐ Q9.2: How would you solve the hydrogen atom in
+QM?</strong></p>
+<p><em>Model answer (this exact Q appears in the interview reference doc
+— keep the same style):</em></p>
+<p>Take the <strong>3D time-independent Schrödinger equation</strong>
+with the Coulomb potential <span
+class="math inline"><em>V</em>(<em>r</em>) =  − <em>e</em><sup>2</sup>/(4<em>π</em><em>ϵ</em><sub>0</sub><em>r</em>)</span>.</p>
+<p>Use <strong>separation of variables</strong>: <span
+class="math inline"><em>ψ</em>(<em>r</em>,<em>θ</em>,<em>ϕ</em>) = <em>R</em>(<em>r</em>) <em>Y</em>(<em>θ</em>,<em>ϕ</em>)</span>.
+This separates into a radial equation and an angular equation.</p>
+<p><strong>Follow-up Q9.2a:</strong> What’s the next step?</p>
+<blockquote>
+<p>For the <strong>radial equation</strong>, we make a typical
+<strong>ansatz</strong> (e.g., <span
+class="math inline"><em>R</em>(<em>r</em>) = <em>u</em>(<em>r</em>)/<em>r</em></span>
+with <span
+class="math inline"><em>u</em> = <em>e</em><sup>−<em>r</em>/<em>a</em></sup> <em>r</em><sup><em>l</em></sup> <em>v</em>(<em>r</em>)</span>,
+<span class="math inline"><em>v</em>(<em>r</em>)</span> a polynomial —
+leads to Laguerre polynomials). For the <strong>angular
+equation</strong>, the solutions are <strong>spherical
+harmonics</strong> <span
+class="math inline"><em>Y</em><sub><em>l</em><em>m</em></sub>(<em>θ</em>,<em>ϕ</em>)</span>.</p>
+</blockquote>
+<p><strong>Follow-up Q9.2b:</strong> What are the boundary
+conditions?</p>
+<blockquote>
+<p>For the radial equation: <span class="math inline"><em>ψ</em></span>
+must be <strong>regular at <span
+class="math inline"><em>r</em> = 0</span></strong> (otherwise it blows
+up). And <span class="math inline"><em>ψ</em> → 0</span> as <span
+class="math inline"><em>r</em> → ∞</span> (otherwise unbounded
+probability — unphysical, also wouldn’t be normalizable).</p>
+</blockquote>
+<p><strong>Follow-up Q9.2c:</strong> Why are the angular momentum values
+discretized?</p>
+<blockquote>
+<p>Because of <strong>symmetry / boundary conditions</strong>. The
+angular coordinates have the ranges <span
+class="math inline"><em>θ</em> ∈ [0,<em>π</em>]</span> and <span
+class="math inline"><em>ϕ</em> ∈ [0,2<em>π</em>]</span>, and continuity
+of the wavefunction under <span
+class="math inline"><em>ϕ</em> → <em>ϕ</em> + 2<em>π</em></span> forces
+<span class="math inline"><em>m</em></span> to be an integer. The
+constraint that <span
+class="math inline"><em>Y</em><sub><em>l</em><em>m</em></sub></span> be
+regular at the poles further forces <span
+class="math inline"><em>l</em> = 0, 1, 2, …</span> with <span
+class="math inline">|<em>m</em>| ≤ <em>l</em></span>.</p>
+</blockquote>
+<p><strong>Follow-up Q9.2d:</strong> How is <span
+class="math inline"><em>l</em></span> discretized?</p>
+<blockquote>
+<p>Eigenvalues of <span
+class="math inline"><em>L̂</em><sup>2</sup></span> are <span
+class="math inline">ℏ<sup>2</sup><em>l</em>(<em>l</em>+1)</span>. (You
+can quickly drop the <span class="math inline">ℏ</span> if they ask
+“natural units?” — answer cheerfully “Yes, <span
+class="math inline">ℏ = 1</span>.”)</p>
+</blockquote>
+<p><strong>Examiner note:</strong> This <em>exact</em> question with
+these <em>exact</em> follow-ups appears in the interview reference.
+Drill the answers in this exact style: keywords first, point in the
+direction of the solution, let them ask for more.</p>
+<p><strong>⭐⭐⭐ Q9.3: Solve the 1D harmonic oscillator.</strong></p>
+<p><em>Model answer:</em> Hamiltonian <span class="math inline">$\hat H
+= \dfrac{\hat p^2}{2m} + \tfrac12 m\omega^2 \hat x^2$</span>. Introduce
+<strong>ladder operators</strong> <span class="math display">$$\hat a =
+\sqrt{\dfrac{m\omega}{2\hbar}}\left(\hat x + \dfrac{i\hat
+p}{m\omega}\right), \qquad
+\hat a^\dagger = \sqrt{\dfrac{m\omega}{2\hbar}}\left(\hat x -
+\dfrac{i\hat p}{m\omega}\right).$$</span> Then <span
+class="math inline">[<em>â</em>,<em>â</em><sup>†</sup>] = 1</span> and
+<span class="math inline">$\hat H = \hbar\omega(\hat a^\dagger \hat a +
+\tfrac12)$</span>. Energies: <span class="math inline">$E_n =
+\hbar\omega(n + \tfrac12)$</span> for <span
+class="math inline"><em>n</em> = 0, 1, 2, …</span>. Ground state has
+<span class="math inline"><em>â</em>|0⟩ = 0</span>, giving a Gaussian
+<span
+class="math inline"><em>ψ</em><sub>0</sub>(<em>x</em>) ∝ <em>e</em><sup>−<em>m</em><em>ω</em><em>x</em><sup>2</sup>/(2ℏ)</sup></span>.
+<strong>The zero-point energy <span
+class="math inline">ℏ<em>ω</em>/2</span> is non-zero</strong>, in
+contrast to classical mechanics.</p>
+<p><strong>Follow-up Q9.3a:</strong> Why does the harmonic oscillator
+matter so much in physics?</p>
+<blockquote>
+<p><strong>Any small oscillation around a stable equilibrium reduces to
+it</strong> (Taylor expansion of <span
+class="math inline"><em>V</em></span> around its minimum). It’s also the
+<strong>building block of QFT</strong>: each mode of a quantum field is
+a harmonic oscillator, and creation/annihilation operators promote
+excitations into “particles” of the field.</p>
+</blockquote>
+<p><strong>Examiner note (Eichhorn):</strong> ⭐⭐⭐ Critical — her QFT
+course quantizes fields exactly this way. Know the ladder-operator
+method cold.</p>
+<p><strong>⭐⭐ Q9.4: Expected value of <span
+class="math inline"><em>x</em></span> for an electron in
+vacuum.</strong></p>
+<p><em>Model answer:</em> (from interview reference) <span
+class="math inline">⟨<em>x</em>⟩ = 0</span> <strong>by
+symmetry</strong>. The free-particle ground state has reflection
+symmetry, so the expectation value of any odd function of <span
+class="math inline"><em>x</em></span> vanishes.</p>
+<p><strong>⭐⭐ Q9.5: What happens to an electron excited in an
+atom?</strong></p>
+<p><em>Model answer:</em> It decays to a lower energy state by emitting
+a photon. Rate governed by <strong>Fermi’s golden rule</strong>: <span
+class="math display">$$\Gamma_{i \to f} = \dfrac{2\pi}{\hbar}\,|\langle
+f | \hat V | i \rangle|^2\,\rho(E_f)$$</span> where <span
+class="math inline"><em>V̂</em></span> is the perturbation and <span
+class="math inline"><em>ρ</em>(<em>E</em><sub><em>f</em></sub>)</span>
+the density of final states. The photon energy equals the energy
+difference <span
+class="math inline"><em>E</em><sub><em>i</em></sub> − <em>E</em><sub><em>f</em></sub></span>.</p>
+<p><strong>⭐ Q9.6: Schrödinger’s cat — what’s the point?</strong></p>
+<p><em>Model answer:</em> A thought experiment illustrating measurement
+problem: a macroscopic superposition (cat alive + cat dead) is allowed
+by QM rules but never observed. Resolution mechanisms:
+<strong>decoherence</strong> (interaction with environment rapidly
+destroys superpositions of macroscopic states), interpretations
+(Copenhagen, many-worlds, hidden variables, etc.).</p>
+</section>
+</section>
+<section id="chapter-10-thermodynamics-1" class="level1">
+<h1>Chapter 10 — Thermodynamics 1</h1>
+<section id="what-this-chapter-covers-9" class="level2">
+<h2>What this chapter covers</h2>
+<ul>
+<li>Microstates and macrostates</li>
+<li>Equilibrium</li>
+<li>State variables vs. process variables</li>
+<li>Entropy (Boltzmann definition)</li>
+</ul>
+</section>
+<section id="subject-knowledge-expected-9" class="level2">
+<h2>Subject knowledge expected</h2>
+<ul>
+<li>Definition of micro/macrostate</li>
+<li>Equilibrium = maximum entropy</li>
+<li>State vs. process variables (e.g., <span
+class="math inline"><em>T</em>, <em>P</em>, <em>V</em>, <em>S</em></span>
+vs. <span class="math inline"><em>Q</em>, <em>W</em></span>)</li>
+<li><span
+class="math inline"><em>S</em> = <em>k</em><sub><em>B</em></sub>ln <em>Ω</em></span></li>
+<li>Connection to information theory</li>
+</ul>
+</section>
+<section id="likely-questions-9" class="level2">
+<h2>Likely questions</h2>
+<p><strong>⭐⭐ Q10.1: How do you define temperature for any
+system?</strong></p>
+<p><em>Model answer:</em> (from interview reference)
+<strong>Maxwell-Boltzmann distribution</strong> for a classical gas in
+equilibrium — the parameter <span class="math inline"><em>T</em></span>
+in <span
+class="math inline"><em>P</em>(<em>E</em>) ∝ <em>e</em><sup>−<em>E</em>/<em>k</em><sub><em>B</em></sub><em>T</em></sup></span>
+is the temperature. More generally and abstractly: <span
+class="math display">$$\dfrac{1}{T} = \dfrac{\partial S}{\partial
+U}\bigg|_{V,N}$$</span> i.e., temperature is the rate of change of
+entropy with respect to internal energy at fixed volume and particle
+number. Even more loosely: <strong>“the mean energy per degree of
+freedom”</strong> <span class="math inline">$\sim \tfrac12 k_B T$</span>
+(equipartition).</p>
+<p><strong>Follow-up Q10.1a:</strong> How would you define temperature
+in general?</p>
+<blockquote>
+<p>(from the actual interview!) <strong>“It’s the vibrational energy of
+the molecules or particles.”</strong> This is a colloquial but
+acceptable answer — the precise statement is equipartition: every
+quadratic degree of freedom carries <span class="math inline">$\tfrac12
+k_B T$</span>.</p>
+</blockquote>
+<p><strong>⭐⭐ Q10.2: What is a microstate vs. a
+macrostate?</strong></p>
+<p><em>Model answer:</em> A <strong>microstate</strong> specifies the
+complete configuration of all degrees of freedom (positions, momenta of
+all particles, or quantum numbers). A <strong>macrostate</strong> is
+specified by macroscopic variables (energy, volume, particle number).
+Many microstates typically realize the same macrostate; the number of
+such microstates is <span class="math inline"><em>Ω</em></span>, and
+<span
+class="math inline"><em>S</em> = <em>k</em><sub><em>B</em></sub>ln <em>Ω</em></span>.</p>
+<p><strong>⭐⭐ Q10.3: Define entropy.</strong></p>
+<p><em>Model answer:</em> Two equivalent definitions:</p>
+<ul>
+<li><strong>Boltzmann (microscopic):</strong> <span
+class="math inline"><em>S</em> = <em>k</em><sub><em>B</em></sub>ln <em>Ω</em></span>,
+where <span class="math inline"><em>Ω</em></span> is the number of
+microstates compatible with the given macrostate.</li>
+<li><strong>Clausius (macroscopic):</strong> <span
+class="math inline"><em>d</em><em>S</em> = <em>δ</em><em>Q</em><sub>rev</sub>/<em>T</em></span>
+for reversible heat exchange.</li>
+</ul>
+<p>Both agree in equilibrium. The microscopic version explains
+<em>why</em> entropy tends to increase: systems evolve toward
+macrostates with more microstates (more probable).</p>
+<p><strong>⭐ Q10.4: What are the modes of heat transfer?</strong></p>
+<p><em>Model answer:</em> (this appeared in interview reference for
+“Yara”):</p>
+<ul>
+<li><strong>Conduction</strong>: heat transfer through a stationary
+medium by molecular interactions. Fourier’s law: <span
+class="math inline"><em>q</em> =  − <em>κ</em> ∇<em>T</em></span>.</li>
+<li><strong>Convection</strong>: heat transfer by bulk motion of a
+fluid.</li>
+<li><strong>Radiation</strong>: heat transfer by electromagnetic waves;
+Stefan-Boltzmann law <span
+class="math inline"><em>P</em> = <em>σ</em><em>A</em><em>T</em><sup>4</sup></span>.</li>
+</ul>
+</section>
+</section>
+<section id="chapter-11-thermodynamics-2-laws-and-engines"
+class="level1">
+<h1>Chapter 11 — Thermodynamics 2: Laws and Engines</h1>
+<section id="what-this-chapter-covers-10" class="level2">
+<h2>What this chapter covers</h2>
+<ul>
+<li>First law: energy conservation</li>
+<li>Second law: entropy growth</li>
+<li>Heat engines, Carnot cycle, efficiency limits</li>
+</ul>
+</section>
+<section id="subject-knowledge-expected-10" class="level2">
+<h2>Subject knowledge expected</h2>
+<ul>
+<li>The four laws of thermodynamics</li>
+<li>Carnot cycle and Carnot efficiency <span
+class="math inline"><em>η</em> = 1 − <em>T</em><sub><em>C</em></sub>/<em>T</em><sub><em>H</em></sub></span></li>
+<li>Thermodynamic potentials: <span
+class="math inline"><em>U</em>, <em>F</em>, <em>H</em>, <em>G</em></span></li>
+</ul>
+</section>
+<section id="likely-questions-10" class="level2">
+<h2>Likely questions</h2>
+<p><strong>⭐⭐⭐ Q11.1: State the laws of thermodynamics.</strong></p>
+<p><em>Model answer:</em></p>
+<ul>
+<li><strong>Zeroth</strong>: If <span
+class="math inline"><em>A</em></span> and <span
+class="math inline"><em>B</em></span> are each in thermal equilibrium
+with <span class="math inline"><em>C</em></span>, then <span
+class="math inline"><em>A</em></span> and <span
+class="math inline"><em>B</em></span> are in equilibrium with each
+other. Defines temperature.</li>
+<li><strong>First</strong>: <span
+class="math inline"><em>d</em><em>U</em> = <em>δ</em><em>Q</em> − <em>δ</em><em>W</em></span>.
+Energy conservation including heat.</li>
+<li><strong>Second</strong>: <span
+class="math inline"><em>d</em><em>S</em> ≥ 0</span> for an isolated
+system. Entropy of the universe never decreases.</li>
+<li><strong>Third</strong>: <span
+class="math inline"><em>S</em> → 0</span> as <span
+class="math inline"><em>T</em> → 0</span> for a perfect crystal
+(Nernst).</li>
+</ul>
+<p><strong>⭐⭐ Q11.2: What’s the Carnot efficiency?</strong></p>
+<p><em>Model answer:</em> For a heat engine operating between hot
+reservoir at <span
+class="math inline"><em>T</em><sub><em>H</em></sub></span> and cold
+reservoir at <span
+class="math inline"><em>T</em><sub><em>C</em></sub></span> (in Kelvin):
+<span class="math display">$$\eta_\text{Carnot} = 1 -
+\dfrac{T_C}{T_H}$$</span> <strong>No engine can exceed this</strong>
+(consequence of the second law). The Carnot cycle (two isothermals + two
+adiabats) achieves this maximum.</p>
+<p><strong>Follow-up Q11.2a:</strong> What’s the adiabatic index <span
+class="math inline"><em>γ</em></span>?</p>
+<blockquote>
+<p>Ratio <span
+class="math inline"><em>C</em><sub><em>P</em></sub>/<em>C</em><sub><em>V</em></sub></span>.
+For an ideal monatomic gas: <span
+class="math inline"><em>γ</em> = 5/3</span>. For diatomic: <span
+class="math inline"><em>γ</em> = 7/5</span>. For
+<strong>radiation</strong> (relevant to cosmology — Heisenberg!): <span
+class="math inline"><em>γ</em> = 4/3</span>.</p>
+</blockquote>
+<p><strong>⭐⭐ Q11.3: Why does entropy always increase?</strong></p>
+<p><em>Model answer:</em> Statistical argument: macrostates with more
+microstates are more probable. A system evolving microscopically
+(deterministically and reversibly!) under Hamilton’s equations explores
+phase space, and macroscopically it tends toward the <em>most
+probable</em> macrostate — which is the one with maximum <span
+class="math inline"><em>Ω</em></span>, i.e., maximum <span
+class="math inline"><em>S</em></span>. The increase is statistical, not
+deterministic — Poincaré recurrence guarantees rare returns, but on
+cosmological timescales for macroscopic systems.</p>
+</section>
+</section>
+<section id="chapter-12-gauging-eichung" class="level1">
+<h1>Chapter 12 — Gauging (<em>Eichung</em>)</h1>
+<section id="what-this-chapter-covers-11" class="level2">
+<h2>What this chapter covers</h2>
+<ul>
+<li>Gauge freedom in electrodynamics</li>
+<li>Gauge transformations in classical mechanics (less common)</li>
+<li>Gauge transformations in quantum mechanics</li>
+<li>Gauge theory as a unifying framework</li>
+</ul>
+</section>
+<section id="subject-knowledge-expected-11" class="level2">
+<h2>Subject knowledge expected</h2>
+<ul>
+<li><span
+class="math inline"><em>A</em><sub><em>μ</em></sub> → <em>A</em><sub><em>μ</em></sub> + ∂<sub><em>μ</em></sub><em>χ</em></span>
+leaves observable fields invariant</li>
+<li>Common gauge choices (Lorenz, Coulomb)</li>
+<li>Gauge transformation of QM wavefunctions: <span
+class="math inline"><em>ψ</em> → <em>e</em><sup><em>i</em><em>q</em><em>χ</em>/ℏ</sup><em>ψ</em></span></li>
+<li>Local U(1) symmetry <span class="math inline">⇒</span> existence of
+EM field</li>
+</ul>
+</section>
+<section id="likely-questions-11" class="level2">
+<h2>Likely questions</h2>
+<p><strong>⭐⭐⭐ Q12.1: What is a gauge transformation?</strong></p>
+<p><em>Model answer:</em> In EM: <span
+class="math inline"><em>A</em><sub><em>μ</em></sub> → <em>A</em><sub><em>μ</em></sub> + ∂<sub><em>μ</em></sub><em>χ</em></span>
+where <span class="math inline"><em>χ</em>(<em>x</em>)</span> is an
+arbitrary scalar function. This leaves <span
+class="math inline"><em>F</em><sub><em>μ</em><em>ν</em></sub> = ∂<sub><em>μ</em></sub><em>A</em><sub><em>ν</em></sub> − ∂<sub><em>ν</em></sub><em>A</em><sub><em>μ</em></sub></span>
+unchanged (because partial derivatives commute), so <span
+class="math inline"><strong>E</strong></span> and <span
+class="math inline"><strong>B</strong></span> are invariant. The vector
+potential <span
+class="math inline"><em>A</em><sub><em>μ</em></sub></span> contains
+gauge-dependent (unphysical) information; <span
+class="math inline"><em>F</em><sub><em>μ</em><em>ν</em></sub></span> is
+gauge-invariant (physical).</p>
+<p><strong>Follow-up Q12.1a:</strong> Common gauge choices?</p>
+<blockquote>
+<ul>
+<li><strong>Lorenz gauge</strong>: <span
+class="math inline">∂<sub><em>μ</em></sub><em>A</em><sup><em>μ</em></sup> = 0</span>.
+Lorentz-invariant, useful in covariant treatments.</li>
+<li><strong>Coulomb gauge</strong>: <span
+class="math inline">∇ ⋅ <strong>A</strong> = 0</span>. Useful for static
+problems; in this gauge, <span class="math inline"><em>φ</em></span>
+obeys Poisson’s equation directly.</li>
+<li><strong>Temporal gauge</strong>: <span
+class="math inline"><em>A</em><sup>0</sup> = 0</span>.</li>
+</ul>
+</blockquote>
+<p><strong>⭐⭐⭐ Q12.2: Why must charge be conserved if EM has gauge
+invariance?</strong></p>
+<p><em>Model answer:</em> (Already covered in Ch 6.) The interaction
+Lagrangian <span
+class="math inline"> − <em>A</em><sub><em>μ</em></sub><em>J</em><sup><em>μ</em></sup></span>
+transforms under <span
+class="math inline"><em>A</em><sub><em>μ</em></sub> → <em>A</em><sub><em>μ</em></sub> + ∂<sub><em>μ</em></sub><em>χ</em></span>
+to give an extra <span
+class="math inline"> − ∂<sub><em>μ</em></sub><em>χ</em><em>J</em><sup><em>μ</em></sup></span>.
+By integration by parts (assuming fields vanish at boundary), this
+equals <span
+class="math inline"> + <em>χ</em> ∂<sub><em>μ</em></sub><em>J</em><sup><em>μ</em></sup></span>.
+For the action to be invariant for arbitrary <span
+class="math inline"><em>χ</em></span>: <span
+class="math inline">∂<sub><em>μ</em></sub><em>J</em><sup><em>μ</em></sup> = 0</span>
+— <strong>charge conservation</strong>. This is Noether’s theorem
+applied to local U(1) symmetry.</p>
+<p><strong>⭐⭐⭐ Q12.3: How does gauge transform a quantum
+wavefunction?</strong></p>
+<p><em>Model answer:</em> <span
+class="math inline"><em>ψ</em> → <em>e</em><sup><em>i</em><em>q</em><em>χ</em>(<em>x</em>)/ℏ</sup> <em>ψ</em></span>
+— a local phase rotation depending on position. The kinetic term must
+use the <strong>covariant derivative</strong> <span
+class="math inline"><em>D</em><sub><em>μ</em></sub> = ∂<sub><em>μ</em></sub> + <em>i</em><em>q</em><em>A</em><sub><em>μ</em></sub>/ℏ</span>
+to be gauge-covariant, instead of plain <span
+class="math inline">∂<sub><em>μ</em></sub></span>. So the requirement of
+<strong>local U(1) gauge invariance</strong> in QM forces the existence
+of a vector field <span
+class="math inline"><em>A</em><sub><em>μ</em></sub></span> with the
+right transformation — i.e., <strong>the photon exists because of U(1)
+gauge symmetry</strong>.</p>
+<p><strong>Follow-up Q12.3a:</strong> Generalize to non-Abelian gauge
+theories.</p>
+<blockquote>
+<p>Replace U(1) by a non-Abelian group like SU(2) or SU(3). The gauge
+field becomes matrix-valued: <span
+class="math inline"><em>A</em><sub><em>μ</em></sub> = <em>A</em><sub><em>μ</em></sub><sup><em>a</em></sup><em>T</em><sup><em>a</em></sup></span>
+with <span class="math inline"><em>T</em><sup><em>a</em></sup></span>
+generators. Field strength gets an extra commutator term <span
+class="math inline"><em>F</em><sub><em>μ</em><em>ν</em></sub> = ∂<sub><em>μ</em></sub><em>A</em><sub><em>ν</em></sub> − ∂<sub><em>ν</em></sub><em>A</em><sub><em>μ</em></sub> − <em>i</em><em>g</em>[<em>A</em><sub><em>μ</em></sub>,<em>A</em><sub><em>ν</em></sub>]</span>.
+Gauge fields self-interact (unlike photons). Foundation of the Standard
+Model: <span
+class="math inline"><em>S</em><em>U</em>(3) × <em>S</em><em>U</em>(2) × <em>U</em>(1)</span>.</p>
+</blockquote>
+<p><strong>Examiner note:</strong> ⭐⭐⭐ Eichhorn’s QFT course
+explicitly derives EM from U(1) gauge invariance — Chapter 6 of her
+notes. She’ll likely test the conceptual chain: local symmetry <span
+class="math inline">→</span> covariant derivative <span
+class="math inline">→</span> gauge field <span
+class="math inline">→</span> Maxwell.</p>
+</section>
+</section>
+<section id="chapter-13-quantum-field-theory-eichhorns-domain"
+class="level1">
+<h1>Chapter 13 — Quantum Field Theory (★★★ EICHHORN’S DOMAIN)</h1>
+<section id="what-this-chapter-covers-12" class="level2">
+<h2>What this chapter covers</h2>
+<ul>
+<li>Second quantization</li>
+<li>Harmonic oscillator as building block of QFT</li>
+<li>Quantization of a free field</li>
+<li>Interaction picture, S-matrix, perturbation theory</li>
+<li>Canonical formalism and path integral</li>
+</ul>
+</section>
+<section id="subject-knowledge-expected-12" class="level2">
+<h2>Subject knowledge expected</h2>
+<ul>
+<li>Why we need QFT: relativity + QM (variable particle number,
+locality)</li>
+<li>Field operators as infinite collections of harmonic oscillators</li>
+<li>Creation/annihilation operators <span
+class="math inline"><em>â</em><sup>†</sup></span> and <span
+class="math inline"><em>â</em></span></li>
+<li>Vacuum state, Fock space, particle number operator</li>
+<li>S-matrix as scattering amplitude generator</li>
+<li>Path integral <span
+class="math inline">∫𝒟<em>ϕ</em> <em>e</em><sup><em>i</em><em>S</em>[<em>ϕ</em>]/ℏ</sup></span></li>
+</ul>
+</section>
+<section id="likely-questions-12" class="level2">
+<h2>Likely questions</h2>
+<p><strong>⭐⭐⭐ Q13.1: Why do we need quantum field
+theory?</strong></p>
+<p><em>Model answer:</em> Two reasons (from Eichhorn’s own notes Ch
+1):</p>
+<ol type="1">
+<li><strong>Relativistic energy fluctuations create particles.</strong>
+From <span
+class="math inline"><em>Δ</em><em>E</em> <em>Δ</em><em>t</em> ≥ ℏ/2</span>
+and <span
+class="math inline"><em>E</em> = <em>m</em><em>c</em><sup>2</sup></span>,
+energy fluctuations on short timescales can produce
+particle-antiparticle pairs. So a fixed-particle-number theory
+(single-particle QM) is incomplete.</li>
+<li><strong>Causality demands locality.</strong> Spacelike-separated
+measurements must be independent (commute). Standard QM doesn’t
+naturally have this; QFT builds it in via local field operators.</li>
+</ol>
+<p>The fundamental object is a <strong>field</strong>
+(Lorentz-invariant), and particles emerge as quantized excitations of
+the field. This is inspired by electrodynamics: photons are excitations
+of the EM field.</p>
+<p><strong>Follow-up Q13.1a:</strong> How does this relate to
+electrodynamics?</p>
+<blockquote>
+<p>Electrodynamics is already a relativistic field theory. The
+photoelectric effect shows the field has particle-like excitations
+(photons). QFT generalizes this to all fields — the electron field gives
+electrons, the Higgs field gives Higgs bosons, etc.</p>
+</blockquote>
+<p><strong>⭐⭐⭐ Q13.2: How is a free field quantized?</strong></p>
+<p><em>Model answer:</em> For a free scalar field <span
+class="math inline"><em>ϕ</em>(<em>x</em>)</span>:</p>
+<ol type="1">
+<li>Fourier expand into modes: <span
+class="math inline">$\phi(\mathbf{x}) = \int
+\dfrac{d^3p}{(2\pi)^3}\,e^{i\mathbf{p}\cdot\mathbf{x}}\,\tilde\phi(\mathbf{p})$</span>.</li>
+<li>Each Fourier mode satisfies a <strong>harmonic oscillator
+equation</strong> with frequency <span class="math inline">$\omega_p =
+\sqrt{\mathbf{p}^2 + m^2}$</span>.</li>
+<li>Promote <span class="math inline"><em>ϕ</em></span> and conjugate
+momentum <span class="math inline"><em>π</em></span> to operators with
+commutation relation <span
+class="math inline">[<em>ϕ</em>(<strong>x</strong>),<em>π</em>(<strong>y</strong>)] = <em>i</em>ℏ <em>δ</em><sup>3</sup>(<strong>x</strong>−<strong>y</strong>)</span>.</li>
+<li>Introduce creation/annihilation operators <span
+class="math inline"><em>â</em><sup>†</sup>(<strong>p</strong>)</span>
+and <span class="math inline"><em>â</em>(<strong>p</strong>)</span> for
+each momentum mode.</li>
+<li><strong>Fock space</strong>: vacuum <span
+class="math inline">|0⟩</span> with <span
+class="math inline"><em>â</em>(<strong>p</strong>)|0⟩ = 0</span>;
+one-particle states <span
+class="math inline"><em>â</em><sup>†</sup>(<strong>p</strong>)|0⟩</span>;
+multi-particle states by repeated application of <span
+class="math inline"><em>â</em><sup>†</sup></span>’s.</li>
+</ol>
+<p>So the quantum field is an <strong>infinite collection of harmonic
+oscillators</strong>, one per momentum mode. Excitations are particles
+with definite momentum.</p>
+<p><strong>Follow-up Q13.2a:</strong> What’s the zero-point energy?</p>
+<blockquote>
+<p>Each mode contributes <span class="math inline">$\tfrac12
+\hbar\omega_p$</span>. Total vacuum energy is divergent (<span
+class="math inline">∫<em>d</em><sup>3</sup><em>p</em> <em>ω</em><sub><em>p</em></sub></span>).
+This is the origin of one of the deepest puzzles: the
+<strong>cosmological constant problem</strong> — naive QFT predicts
+vacuum energy <span class="math inline"> ∼ 10<sup>120</sup></span> times
+larger than observed dark energy. (Bridges directly to Heisenberg’s
+territory.)</p>
+</blockquote>
+<p><strong>⭐⭐⭐ Q13.3: What is the path integral
+formulation?</strong></p>
+<p><em>Model answer:</em> Feynman’s reformulation of QM: <span
+class="math display">⟨<em>x</em><sub><em>f</em></sub>, <em>t</em><sub><em>f</em></sub>|<em>x</em><sub><em>i</em></sub>, <em>t</em><sub><em>i</em></sub>⟩ = ∫𝒟<em>x</em>(<em>t</em>) <em>e</em><sup><em>i</em><em>S</em>[<em>x</em>]/ℏ</sup></span>
+The amplitude to go from <span
+class="math inline">(<em>x</em><sub><em>i</em></sub>,<em>t</em><sub><em>i</em></sub>)</span>
+to <span
+class="math inline">(<em>x</em><sub><em>f</em></sub>,<em>t</em><sub><em>f</em></sub>)</span>
+is a sum over <strong>all paths</strong>, each weighted by phase <span
+class="math inline"><em>e</em><sup><em>i</em><em>S</em>/ℏ</sup></span>.</p>
+<p>The <strong>classical limit</strong> (<span
+class="math inline">ℏ → 0</span>) recovers Newton: paths near the
+stationary action <span
+class="math inline"><em>δ</em><em>S</em> = 0</span> interfere
+constructively; all other paths cancel. This is why the classical action
+principle is “natural” — it emerges from QM by stationary-phase
+approximation.</p>
+<p><strong>Follow-up Q13.3a:</strong> Why path integrals over canonical
+quantization?</p>
+<blockquote>
+<p>Two big advantages: - <strong>Manifestly Lorentz-covariant</strong>
+(no preferred time direction in <span
+class="math inline"><em>S</em></span>). - <strong>Symmetries are
+explicit</strong> in <span class="math inline"><em>S</em></span>, easier
+to maintain. - <strong>Connection to statistical mechanics</strong>: in
+Euclidean time (<span
+class="math inline"><em>t</em> →  − <em>i</em><em>τ</em></span>), the
+path integral becomes a partition function <span
+class="math inline"><em>Z</em> = ∫𝒟<em>ϕ</em> <em>e</em><sup>−<em>S</em><sub><em>E</em></sub>/ℏ</sup></span>.
+Basis of lattice QFT.</p>
+</blockquote>
+<p><strong>⭐⭐⭐ Q13.4: What is the S-matrix?</strong></p>
+<p><em>Model answer:</em> The S-matrix maps <strong>incoming</strong>
+asymptotic states (long before interaction) to <strong>outgoing</strong>
+states (long after): <span
+class="math inline">|<em>f</em>⟩=<em>Ŝ</em>|<em>i</em>⟩</span>. Its
+matrix elements <span
+class="math inline">⟨<em>f</em>|<em>Ŝ</em>|<em>i</em>⟩</span> give
+scattering amplitudes, which connect to <strong>cross sections</strong>
+measurable at particle colliders.</p>
+<p>Computed perturbatively in the coupling constant via <strong>Feynman
+diagrams</strong> — each diagram represents a term in a series expansion
+of the S-matrix.</p>
+<p><strong>Examiner note (Eichhorn):</strong> ⭐⭐⭐ This is the
+<em>exact</em> content of her course. If she’s in interview mode, she’ll
+likely ask the conceptual question “why do we need QFT?” and probe your
+understanding of how fields differ from wavefunctions. Don’t bluff on
+technical details — she’ll spot it. Show conceptual clarity.</p>
+</section>
+</section>
+<section id="chapter-14-general-relativity-heisenbergs-domain"
+class="level1">
+<h1>Chapter 14 — General Relativity (★★★ HEISENBERG’S DOMAIN)</h1>
+<section id="what-this-chapter-covers-13" class="level2">
+<h2>What this chapter covers</h2>
+<ul>
+<li>Light cone, equivalence principle, and the metric</li>
+<li>Connection and curvature</li>
+<li>Energy-momentum tensor</li>
+<li>Einstein’s field equations</li>
+</ul>
+</section>
+<section id="subject-knowledge-expected-13" class="level2">
+<h2>Subject knowledge expected</h2>
+<ul>
+<li>The equivalence principle: gravitational mass = inertial mass</li>
+<li>Why this implies gravity is geometry, not a force</li>
+<li>The metric tensor <span
+class="math inline"><em>g</em><sub><em>μ</em><em>ν</em></sub></span> as
+the dynamical variable</li>
+<li>Curvature: Riemann tensor, Ricci tensor, Ricci scalar</li>
+<li>Einstein’s equations: <span class="math inline">$R_{\mu\nu} -
+\tfrac12 g_{\mu\nu} R + \Lambda g_{\mu\nu} = 8\pi G
+T_{\mu\nu}/c^4$</span></li>
+<li>The energy-momentum tensor as source of curvature</li>
+</ul>
+</section>
+<section id="likely-questions-13" class="level2">
+<h2>Likely questions</h2>
+<p><strong>⭐⭐⭐ Q14.1: State the equivalence principle.</strong></p>
+<p><em>Model answer:</em> Three equivalent forms (increasing
+strength):</p>
+<ol type="1">
+<li><strong>Weak equivalence principle (WEP)</strong>: All bodies fall
+with the same acceleration in a gravitational field, regardless of their
+mass or composition. (Galileo’s observation; Eötvös experiments verified
+to <span class="math inline">10<sup>−13</sup></span>.)</li>
+<li><strong>Einstein equivalence principle (EEP)</strong>: Locally (in a
+small enough region of spacetime), the effects of gravity are
+indistinguishable from acceleration. A freely falling observer
+experiences no gravity locally.</li>
+<li><strong>Strong equivalence principle (SEP)</strong>: All laws of
+physics (including gravity itself!) in a freely falling frame reduce to
+special relativity locally.</li>
+</ol>
+<p><strong>Follow-up Q14.1a:</strong> Why does this imply gravity is
+geometry, not a force?</p>
+<blockquote>
+<p>Because if free fall locally eliminates gravity, then the “natural”
+trajectories in gravity are <strong>geodesics</strong> of spacetime —
+straight lines in the absence of forces. What looks like an attractive
+force is actually objects following geodesics in curved spacetime.
+<strong>Gravity = curvature.</strong> Mass and energy curve spacetime;
+spacetime tells matter how to move.</p>
+</blockquote>
+<p><strong>Follow-up Q14.1b:</strong> Has the equivalence principle been
+tested?</p>
+<blockquote>
+<p>Yes, to extraordinary precision. Eötvös-type experiments confirm WEP
+to one part in <span class="math inline">10<sup>13</sup></span>. The
+<strong>MICROSCOPE satellite</strong> mission (2017) pushed this to
+<span class="math inline"> ∼ 10<sup>−15</sup></span>. All major
+experiments (lunar laser ranging, atomic interferometry, gravitational
+redshift) confirm EEP.</p>
+</blockquote>
+<p><strong>Examiner note (Heisenberg):</strong> ⭐⭐⭐ Gold-tier topic.
+If she asks any “why gravity?” question, the equivalence principle is
+the headline answer.</p>
+<p><strong>⭐⭐⭐ Q14.2: What is the metric <span
+class="math inline"><em>g</em><sub><em>μ</em><em>ν</em></sub></span>?</strong></p>
+<p><em>Model answer:</em> The metric tensor encodes spacetime geometry.
+The infinitesimal interval between two events: <span
+class="math display"><em>d</em><em>s</em><sup>2</sup> = <em>g</em><sub><em>μ</em><em>ν</em></sub> <em>d</em><em>x</em><sup><em>μ</em></sup> <em>d</em><em>x</em><sup><em>ν</em></sup></span>
+In flat spacetime, <span
+class="math inline"><em>g</em><sub><em>μ</em><em>ν</em></sub> = <em>η</em><sub><em>μ</em><em>ν</em></sub> = diag(+1,−1,−1,−1)</span>
+(Minkowski). In curved spacetime, <span
+class="math inline"><em>g</em><sub><em>μ</em><em>ν</em></sub></span>
+depends on position and is the dynamical field of GR. The metric also
+raises/lowers indices and defines lengths, angles, and causal
+structure.</p>
+<p><strong>Follow-up Q14.2a:</strong> What does it mean for spacetime to
+be curved?</p>
+<blockquote>
+<p>Geodesics no longer extend to parallel lines that never meet. Two
+initially parallel geodesics can converge (positive curvature, like on a
+sphere — gravitational attraction) or diverge (negative curvature). The
+<strong>Riemann tensor</strong> <span
+class="math inline"><em>R</em><sub> <em>ν</em><em>ρ</em><em>σ</em></sub><sup><em>μ</em></sup></span>
+measures this geodesic deviation. In flat space, <span
+class="math inline"><em>R</em> = 0</span>.</p>
+</blockquote>
+<p><strong>⭐⭐⭐ Q14.3: Write Einstein’s field equations.</strong></p>
+<p><em>Model answer:</em> <span class="math display">$$R_{\mu\nu} -
+\tfrac12 g_{\mu\nu} R + \Lambda g_{\mu\nu} = \dfrac{8\pi
+G}{c^4}\,T_{\mu\nu}$$</span></p>
+<p>Left side: <strong>geometry</strong> (Ricci tensor <span
+class="math inline"><em>R</em><sub><em>μ</em><em>ν</em></sub></span>,
+Ricci scalar <span class="math inline"><em>R</em></span>, cosmological
+constant <span class="math inline"><em>Λ</em></span>). Right side:
+<strong>matter</strong> (energy-momentum tensor <span
+class="math inline"><em>T</em><sub><em>μ</em><em>ν</em></sub></span>).</p>
+<p>“Matter tells spacetime how to curve; spacetime tells matter how to
+move.” — Wheeler.</p>
+<p><strong>Follow-up Q14.3a:</strong> What is the energy-momentum tensor
+for a perfect fluid?</p>
+<blockquote>
+<p><span
+class="math inline"><em>T</em><sup><em>μ</em><em>ν</em></sup> = (<em>ρ</em>+<em>p</em>/<em>c</em><sup>2</sup>) <em>u</em><sup><em>μ</em></sup><em>u</em><sup><em>ν</em></sup> − <em>p</em> <em>g</em><sup><em>μ</em><em>ν</em></sup></span>
+where <span class="math inline"><em>ρ</em></span> is rest-frame energy
+density, <span class="math inline"><em>p</em></span> is pressure, <span
+class="math inline"><em>u</em><sup><em>μ</em></sup></span> is the
+four-velocity of the fluid. Conservation: <span
+class="math inline">∇<sub><em>μ</em></sub><em>T</em><sup><em>μ</em><em>ν</em></sup> = 0</span>
+— covariant continuity equation. <strong>Used everywhere in
+cosmology</strong> (e.g., FLRW cosmology models matter and radiation as
+perfect fluids).</p>
+</blockquote>
+<p><strong>Follow-up Q14.3b:</strong> Why is the cosmological constant
+<span class="math inline"><em>Λ</em></span> controversial?</p>
+<blockquote>
+<p>Observed value: <span
+class="math inline"><em>Λ</em> ∼ 10<sup>−52</sup> m<sup>−2</sup></span>
+— drives the accelerated expansion of the universe (1998 supernova
+observations, Nobel 2011). QFT predicts a vacuum energy ~<span
+class="math inline">10<sup>120</sup></span> times larger. This
+<strong>cosmological constant problem</strong> is one of the deepest
+puzzles in physics and is a key motivator for <strong>modified gravity
+theories</strong>, including Heisenberg’s generalized Proca
+theories.</p>
+</blockquote>
+<p><strong>⭐⭐⭐ Q14.4: What are gravitational waves?</strong></p>
+<p><em>Model answer:</em> <strong>Ripples in spacetime
+curvature</strong>, propagating at the speed of light. They arise as
+solutions of the linearized Einstein equations <span
+class="math inline"><em>g</em><sub><em>μ</em><em>ν</em></sub> = <em>η</em><sub><em>μ</em><em>ν</em></sub> + <em>h</em><sub><em>μ</em><em>ν</em></sub></span>
+(small perturbation <span
+class="math inline"><em>h</em><sub><em>μ</em><em>ν</em></sub></span>).
+In a suitable gauge (transverse-traceless), <span
+class="math inline"><em>h</em><sub><em>μ</em><em>ν</em></sub></span>
+satisfies a wave equation <span
+class="math inline">□<em>h</em><sub><em>μ</em><em>ν</em></sub> = 0</span>.
+Two polarizations: <span class="math inline">+</span> and <span
+class="math inline">×</span>.</p>
+<p><strong>Follow-up Q14.4a:</strong> Why are gravitational waves
+quadrupole rather than dipole?</p>
+<blockquote>
+<p>Dipole radiation requires a time-varying dipole moment. For mass, the
+dipole is the position of the center of mass — conserved (momentum
+conservation). For mass currents, dipole would be angular momentum —
+also conserved. The <strong>lowest non-zero multipole</strong> is the
+<strong>quadrupole</strong>. (Contrast EM: dipole radiation exists
+because electric dipole moment isn’t conserved.)</p>
+</blockquote>
+<p><strong>Follow-up Q14.4b:</strong> How are they detected?</p>
+<blockquote>
+<p>Laser interferometers like <strong>LIGO</strong> and
+<strong>Virgo</strong> measure strain <span
+class="math inline"><em>h</em> ∼ <em>Δ</em><em>L</em>/<em>L</em></span>.
+Typical strains from astrophysical sources: <span
+class="math inline"><em>h</em> ∼ 10<sup>−21</sup></span> — fractional
+length change of one part in <span
+class="math inline">10<sup>21</sup></span> over the 4 km arms. First
+direct detection: <strong>GW150914</strong> (September 14, 2015), a
+binary black hole merger. Nobel Prize 2017.</p>
+</blockquote>
+<p><strong>Examiner note (Heisenberg):</strong> ⭐⭐⭐ GW physics is
+directly in her field — modified gravity theories produce
+<em>different</em> polarization modes (up to 6 instead of 2). If she
+asks about GW polarization, mention you’re aware that <strong>modified
+gravity can predict more than two polarizations</strong> — that’s gold
+for her.</p>
+<p><strong>⭐⭐⭐ Q14.5: What is a black hole?</strong></p>
+<p><em>Model answer:</em> A region of spacetime where gravity is so
+strong that not even light can escape. The boundary is the <strong>event
+horizon</strong>, at Schwarzschild radius <span
+class="math inline"><em>r</em><sub><em>s</em></sub> = 2<em>G</em><em>M</em>/<em>c</em><sup>2</sup></span>.
+For a <span class="math inline">1 <em>M</em><sub>⊙</sub></span> black
+hole, <span
+class="math inline"><em>r</em><sub><em>s</em></sub> ≈ 3</span> km.</p>
+<p><strong>Follow-up Q14.5a:</strong> What’s the no-hair theorem?</p>
+<blockquote>
+<p>Stationary black hole solutions are characterized by only three
+parameters: <strong>mass, charge, angular momentum</strong> (and nothing
+else). All other information about matter that formed the black hole is
+lost behind the horizon. This is a major motivation for studying black
+hole solutions in modified gravity (do they still obey no-hair?).</p>
+</blockquote>
+<p><strong>Follow-up Q14.5b:</strong> What’s Hawking radiation?</p>
+<blockquote>
+<p>Black holes radiate thermally with temperature <span
+class="math inline"><em>T</em><sub><em>H</em></sub> = ℏ<em>c</em><sup>3</sup>/(8<em>π</em><em>G</em><em>M</em><em>k</em><sub><em>B</em></sub>)</span>.
+Smaller black holes are hotter. Information paradox: thermal radiation
+seems to carry no information about what fell in — open problem at the
+intersection of GR and QFT.</p>
+</blockquote>
+</section>
+</section>
+<section id="chapter-15-summary-space-time-dynamics-and-information"
+class="level1">
+<h1>Chapter 15 — Summary: Space, Time, Dynamics, and Information</h1>
+<section id="what-this-chapter-covers-14" class="level2">
+<h2>What this chapter covers</h2>
+<ul>
+<li>A unified perspective on space, time, and dynamics across all of
+modern physics</li>
+<li>Physics and information (entropy, holographic principle hints)</li>
+</ul>
+</section>
+<section id="likely-questions-14" class="level2">
+<h2>Likely questions</h2>
+<p><strong>⭐⭐ Q15.1: How has our conception of space and time
+evolved?</strong></p>
+<p><em>Model answer:</em></p>
+<ul>
+<li><strong>Newton</strong>: absolute space and absolute time,
+separate.</li>
+<li><strong>Special relativity</strong>: spacetime as one entity, but
+flat (Minkowski). Lorentz symmetry mixes space and time.</li>
+<li><strong>General relativity</strong>: spacetime is curved, dynamical
+— geometry is determined by matter content via Einstein’s
+equations.</li>
+<li><strong>Quantum mechanics</strong>: time is a parameter; states live
+in Hilbert space.</li>
+<li><strong>QFT</strong>: fields defined on spacetime; particles are
+excitations. Locality and Lorentz invariance built in.</li>
+<li><strong>Quantum gravity (open problem!)</strong>: spacetime itself
+might emerge from something more fundamental — strings, loops,
+asymptotic safety (Eichhorn’s field), holography, etc.</li>
+</ul>
+<p><strong>⭐⭐ Q15.2: What’s the connection between physics and
+information?</strong></p>
+<p><em>Model answer:</em> - Entropy is information (Shannon, Boltzmann).
+<span
+class="math inline"><em>S</em> = <em>k</em><sub><em>B</em></sub>ln <em>Ω</em></span>
+is the “information needed to specify the microstate.” - Holography
+(Maldacena): the information in a region of space might be encoded
+entirely on its boundary. The black hole entropy is proportional to
+area, not volume — <span
+class="math inline"><em>S</em><sub>BH</sub> = <em>A</em>/(4 <em>l</em><sub><em>p</em></sub><sup>2</sup>)</span>
+in Planck units. - Information conservation in unitary QM evolution and
+Liouville’s theorem in classical mechanics: closed systems preserve
+information.</p>
+</section>
+</section>
+<section id="cross-cutting-examiner-cheat-sheet" class="level1">
+<h1>Cross-cutting Examiner Cheat Sheet</h1>
+<section id="tier-1-questions-ranked-by-combined-examiner-relevance"
+class="level2">
+<h2>Tier-1 questions, ranked by combined examiner relevance</h2>
+<p>These are the questions that, with high probability, will appear in
+the 30-minute interview. Drill these to the level where you can deliver
+the headline answer in 10 seconds and elaborate for 60 seconds.</p>
+<ol type="1">
+<li>⭐⭐⭐ <strong>State the principle of stationary action.</strong>
+Derive Euler-Lagrange.</li>
+<li>⭐⭐⭐ <strong>State Noether’s theorem.</strong> Apply to
+translation, rotation, time-translation.</li>
+<li>⭐⭐⭐ <strong>Where does energy conservation fail?</strong>
+(Cosmology — Heisenberg’s eyes light up.)</li>
+<li>⭐⭐⭐ <strong>Solve hydrogen in QM</strong> (per interview
+reference’s exact pattern). Separation of variables → ansatz → boundary
+conditions → discretized angular momentum.</li>
+<li>⭐⭐⭐ <strong>State the SR postulates. Derive time
+dilation.</strong></li>
+<li>⭐⭐⭐ <strong>Write Maxwell’s equations.</strong> Then in covariant
+form.</li>
+<li>⭐⭐⭐ <strong>Derive Maxwell’s equations from <span
+class="math inline">$\mathcal{L} = -\tfrac14
+F_{\mu\nu}F^{\mu\nu}$</span>.</strong></li>
+<li>⭐⭐⭐ <strong>What is gauge invariance?</strong> Why does it imply
+charge conservation?</li>
+<li>⭐⭐⭐ <strong>State the postulates of QM.</strong></li>
+<li>⭐⭐⭐ <strong>Why must observables be Hermitian?</strong></li>
+<li>⭐⭐⭐ <strong>Compute <span
+class="math inline">[<em>x̂</em>,<em>p̂</em>]</span> and <span
+class="math inline">[<em>L̂</em><sub><em>x</em></sub>,<em>L̂</em><sub><em>y</em></sub>]</span>.</strong></li>
+<li>⭐⭐⭐ <strong>Solve the harmonic oscillator</strong> with ladder
+operators. Why is this the building block of QFT?</li>
+<li>⭐⭐⭐ <strong>State the equivalence principle.</strong> Why does it
+imply gravity = geometry?</li>
+<li>⭐⭐⭐ <strong>What is Hubble’s law?</strong> What are dark matter
+and dark energy?</li>
+<li>⭐⭐⭐ <strong>What are gravitational waves?</strong> Why
+quadrupole, not dipole?</li>
+<li>⭐⭐ <strong>Define temperature.</strong> (Maxwell-Boltzmann,
+equipartition.)</li>
+<li>⭐⭐ <strong>State the four laws of thermodynamics.</strong></li>
+<li>⭐⭐ <strong>What’s Fermi’s golden rule?</strong> Used for atomic
+decay.</li>
+<li>⭐⭐ <strong>Why does <span
+class="math inline">⟨<em>x</em>⟩ = 0</span> for a free
+electron?</strong> (Symmetry.)</li>
+<li>⭐⭐ <strong>Why don’t electrons fall into the nucleus?</strong> (QM
+boundary conditions / Pauli.)</li>
+</ol>
+</section>
+<section id="strategic-tips-distilled" class="level2">
+<h2>Strategic tips, distilled</h2>
+<ol type="1">
+<li><strong>Lead with keywords.</strong> “We use separation of variables
+and a typical ansatz” is better than a five-minute setup.</li>
+<li><strong>Use natural units if appropriate.</strong> If you say <span
+class="math inline">ℏ = 1</span> explicitly, they’ll smile.</li>
+<li><strong>Symmetries are your best friend.</strong> Half the questions
+can be answered “because of the symmetry” plus one elaborating
+sentence.</li>
+<li><strong>Bridge classical and quantum</strong> when possible. They
+love “Poisson brackets become commutators.” “Classical action is the
+saddle point of the quantum path integral.”</li>
+<li><strong>Bridge SR and GR</strong> when possible. They love “Special
+relativity is the case of flat spacetime; in general spacetime, free
+fall = geodesics in curved spacetime.”</li>
+<li><strong>Acknowledge the cosmological connection.</strong> Mentioning
+the cosmological constant problem, dark energy, gravitational waves, CMB
+scores points with Heisenberg.</li>
+<li><strong>Acknowledge the quantization connection.</strong> Mentioning
+canonical quantization, path integrals, Fock space, gauge invariance
+scores points with Eichhorn.</li>
+<li><strong>Be honest about limits.</strong> “I haven’t worked through
+that calculation, but the structure is…” beats bluffing every time.</li>
+</ol>
+</section>
+<section id="what-not-to-do" class="level2">
+<h2>What NOT to do</h2>
+<ul>
+<li>Don’t drone on with a long derivation when a keyword suffices.</li>
+<li>Don’t pretend to know advanced topics (renormalization, Hawking
+radiation details, etc.) in technical detail. Recognize them and gesture
+at the idea.</li>
+<li>Don’t ignore <span class="math inline">ℏ</span> or factors silently
+— note your units choice openly.</li>
+<li>Don’t argue about edge cases that don’t help your answer.</li>
+</ul>
+</section>
+<section id="reading-list-last-days-before-the-interview"
+class="level2">
+<h2>Reading list — last days before the interview</h2>
+<p>Per the user’s interview reference document, the recommended sources
+are:</p>
+<ul>
+<li><strong>David Tong’s lecture notes</strong> (Cambridge) —
+particularly on Classical Dynamics, Statistical Physics, Quantum
+Mechanics, and Electromagnetism. Free online.</li>
+<li><strong>Daniel Fleisch booklets</strong> for Maxwell equations,
+waves, Schrödinger equation — short and conceptual.</li>
+<li><strong>Susskind, Special Relativity and Classical Field
+Theory</strong> — first three chapters for SR.</li>
+<li><strong>Blundell &amp; Blundell, Thermal Physics</strong> — for
+thermo + stat mech.</li>
+<li><strong>Konrad &amp; Bartelmann, Moderne Physik 2</strong> (this
+book) — covers the entire interview territory in the Heidelberg
+style.</li>
+</ul>
+<p><strong>Good luck at Heidelberg.</strong></p>
+<p>You have the material. Drill the Tier-1 list out loud. Sleep well the
+night before. Lead with keywords. Be honest. Smile.</p>
+</section>
+</section>
+</body>
+</html>
